@@ -13,7 +13,7 @@ namespace GnssDemonstrator.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController :ControllerBase
+    public class ValuesController : ControllerBase
     {
         private DataContext _context;
         

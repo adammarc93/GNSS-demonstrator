@@ -1,6 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+
 using GnssDemonstrator.API.Models;
 
-using Microsoft.EntityFrameworkCore;
 
 namespace GnssDemonstrator.API.Data
 {
