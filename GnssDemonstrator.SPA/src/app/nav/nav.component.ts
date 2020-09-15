@@ -15,7 +15,7 @@ export class NavComponent implements OnInit {
   ngOnInit() {
   }
 
-  login(){
+  login() {
     console.log(this.model);
 
     this.authService.login(this.model).subscribe(next => {
@@ -25,17 +25,15 @@ export class NavComponent implements OnInit {
     });
   }
 
-  loggedIn(){
+  loggedIn() {
     const token = localStorage.getItem('token');
     // token exist: true
     // token dont exist: false
     return !!token;
   }
 
-  logout(){
+  logout() {
     localStorage.removeItem('token');
     console.log('Zostałeś wylogowany');
   }
-
-
 }
