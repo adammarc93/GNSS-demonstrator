@@ -1,0 +1,2752 @@
+[
+  {
+    "UserName": "Lacey",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "1964-05-01",
+    "Created": "2020-08-29",
+    "LastActive": "2020-08-29",
+    "Description": "Velit fugiat occaecat adipisicing eu adipisicing veniam. Fugiat sint eiusmod fugiat proident ea. Qui velit esse elit non nisi sunt cupidatat cillum adipisicing excepteur voluptate dolor in.\r\n",
+    "Results": [
+      {
+        "Date": "2020-04-14",
+        "Value": 48.1426
+      },
+      {
+        "Date": "2020-06-24",
+        "Value": 0.9929
+      },
+      {
+        "Date": "2020-09-06",
+        "Value": 70.3278
+      },
+      {
+        "Date": "2020-09-29",
+        "Value": 60.7478
+      },
+      {
+        "Date": "2020-04-10",
+        "Value": 61.3886
+      },
+      {
+        "Date": "2020-02-28",
+        "Value": 98.0412
+      },
+      {
+        "Date": "2020-04-14",
+        "Value": 78.811
+      },
+      {
+        "Date": "2020-05-23",
+        "Value": 65.5911
+      },
+      {
+        "Date": "2020-03-01",
+        "Value": 42.0181
+      },
+      {
+        "Date": "2020-07-20",
+        "Value": 96.7952
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/62.jpg",
+      "DateAdded": "2020-05-08"
+    }
+  },
+  {
+    "UserName": "Bridgette",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "2001-05-10",
+    "Created": "2020-05-15",
+    "LastActive": "2020-05-15",
+    "Description": "Nisi eu fugiat id eu excepteur proident qui minim ipsum labore. Cillum tempor consectetur ad duis non aliquip sunt proident duis laboris. Commodo labore mollit qui velit consequat dolor esse eu veniam quis esse. Ullamco occaecat sit eiusmod est cillum anim ex. Consectetur commodo aliqua nostrud qui do pariatur pariatur nostrud nulla ut amet do. Reprehenderit amet dolor labore aliqua consequat proident proident laboris fugiat cillum cillum laborum. Incididunt consectetur dolor deserunt ad minim ex pariatur ullamco exercitation laboris occaecat adipisicing magna cupidatat.\r\n",
+    "Results": [
+      {
+        "Date": "2020-05-12",
+        "Value": 45.1811
+      },
+      {
+        "Date": "2020-09-21",
+        "Value": 84.5114
+      },
+      {
+        "Date": "2020-09-06",
+        "Value": 26.8697
+      },
+      {
+        "Date": "2020-08-22",
+        "Value": 53.0687
+      },
+      {
+        "Date": "2020-07-22",
+        "Value": 18.2867
+      },
+      {
+        "Date": "2020-09-14",
+        "Value": 60.8554
+      },
+      {
+        "Date": "2020-02-18",
+        "Value": 65.9791
+      },
+      {
+        "Date": "2020-03-25",
+        "Value": 77.6654
+      },
+      {
+        "Date": "2020-07-07",
+        "Value": 51.6889
+      },
+      {
+        "Date": "2020-05-24",
+        "Value": 57.4798
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/23.jpg",
+      "DateAdded": "2020-04-11"
+    }
+  },
+  {
+    "UserName": "Katelyn",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "2002-03-19",
+    "Created": "2020-05-13",
+    "LastActive": "2020-05-13",
+    "Description": "Fugiat laboris qui est nisi minim elit cillum excepteur. Nisi eu amet esse eu duis minim sunt adipisicing ea ad laborum esse nulla officia. Cupidatat veniam et proident voluptate dolor laborum ipsum. Ipsum ea minim veniam quis commodo cillum dolore aliqua.\r\n",
+    "Results": [
+      {
+        "Date": "2020-02-19",
+        "Value": 83.5961
+      },
+      {
+        "Date": "2020-04-15",
+        "Value": 11.9429
+      },
+      {
+        "Date": "2020-03-10",
+        "Value": 30.6058
+      },
+      {
+        "Date": "2020-06-02",
+        "Value": 62.194
+      },
+      {
+        "Date": "2020-06-20",
+        "Value": 73.2401
+      },
+      {
+        "Date": "2020-03-29",
+        "Value": 97.5905
+      },
+      {
+        "Date": "2020-02-02",
+        "Value": 8.2061
+      },
+      {
+        "Date": "2020-02-15",
+        "Value": 41.8627
+      },
+      {
+        "Date": "2020-03-12",
+        "Value": 24.6314
+      },
+      {
+        "Date": "2020-05-20",
+        "Value": 40.6367
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/88.jpg",
+      "DateAdded": "2020-02-22"
+    }
+  },
+  {
+    "UserName": "Jami",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "2009-11-20",
+    "Created": "2020-09-06",
+    "LastActive": "2020-09-06",
+    "Description": "Anim nostrud culpa aliquip reprehenderit proident tempor sunt. Elit tempor enim quis ex. Esse eu officia nostrud aute sunt cillum do pariatur. Magna nulla fugiat ipsum fugiat reprehenderit in commodo nostrud dolor enim commodo do deserunt cillum. Elit est qui dolore reprehenderit dolore eu eu in ipsum pariatur laboris nisi excepteur. Ipsum fugiat ad officia incididunt dolor reprehenderit adipisicing anim commodo culpa consectetur amet esse do. Pariatur mollit ad cupidatat sint ipsum id voluptate dolor.\r\n",
+    "Results": [
+      {
+        "Date": "2020-02-13",
+        "Value": 55.6403
+      },
+      {
+        "Date": "2020-02-25",
+        "Value": 53.2565
+      },
+      {
+        "Date": "2020-08-17",
+        "Value": 90.3712
+      },
+      {
+        "Date": "2020-03-29",
+        "Value": 39.4109
+      },
+      {
+        "Date": "2020-02-26",
+        "Value": 20.2456
+      },
+      {
+        "Date": "2020-04-16",
+        "Value": 35.2423
+      },
+      {
+        "Date": "2020-02-13",
+        "Value": 52.4691
+      },
+      {
+        "Date": "2020-07-24",
+        "Value": 31.0784
+      },
+      {
+        "Date": "2020-03-26",
+        "Value": 3.794
+      },
+      {
+        "Date": "2020-04-14",
+        "Value": 9.7893
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/18.jpg",
+      "DateAdded": "2020-02-07"
+    }
+  },
+  {
+    "UserName": "Daphne",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "1993-05-06",
+    "Created": "2020-05-07",
+    "LastActive": "2020-05-07",
+    "Description": "Esse duis ad nulla occaecat do Lorem minim nulla anim quis laboris sint. In dolor exercitation culpa amet veniam qui enim proident fugiat velit anim velit. Deserunt sint consequat non dolore voluptate deserunt mollit exercitation incididunt amet ullamco sunt ut in. Ut in officia et nisi anim. Sunt aliquip eiusmod veniam laborum sit labore consequat nisi tempor ad. Deserunt sunt tempor sunt elit quis aliquip proident qui fugiat duis occaecat.\r\n",
+    "Results": [
+      {
+        "Date": "2020-08-29",
+        "Value": 30.7569
+      },
+      {
+        "Date": "2020-06-05",
+        "Value": 65.7234
+      },
+      {
+        "Date": "2020-05-24",
+        "Value": 81.3544
+      },
+      {
+        "Date": "2020-03-24",
+        "Value": 95.9468
+      },
+      {
+        "Date": "2020-09-27",
+        "Value": 75.9229
+      },
+      {
+        "Date": "2020-04-12",
+        "Value": 53.9896
+      },
+      {
+        "Date": "2020-09-25",
+        "Value": 28.2619
+      },
+      {
+        "Date": "2020-05-22",
+        "Value": 26.7934
+      },
+      {
+        "Date": "2020-03-15",
+        "Value": 62.2003
+      },
+      {
+        "Date": "2020-07-03",
+        "Value": 93.9846
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/9.jpg",
+      "DateAdded": "2020-09-25"
+    }
+  },
+  {
+    "UserName": "Heidi",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "1995-06-12",
+    "Created": "2020-04-22",
+    "LastActive": "2020-04-22",
+    "Description": "Deserunt culpa sint incididunt mollit ullamco quis. Pariatur qui proident id reprehenderit in ipsum ut anim tempor enim nulla. Velit cupidatat nostrud sint adipisicing nulla amet ea incididunt deserunt. Culpa id consequat eu aliquip.\r\n",
+    "Results": [
+      {
+        "Date": "2020-06-21",
+        "Value": 12.9126
+      },
+      {
+        "Date": "2020-02-09",
+        "Value": 68.5749
+      },
+      {
+        "Date": "2020-04-21",
+        "Value": 60.7215
+      },
+      {
+        "Date": "2020-08-21",
+        "Value": 87.2574
+      },
+      {
+        "Date": "2020-02-09",
+        "Value": 81.004
+      },
+      {
+        "Date": "2020-03-06",
+        "Value": 25.057
+      },
+      {
+        "Date": "2020-04-30",
+        "Value": 12.4544
+      },
+      {
+        "Date": "2020-04-21",
+        "Value": 79.0941
+      },
+      {
+        "Date": "2020-07-30",
+        "Value": 53.6483
+      },
+      {
+        "Date": "2020-02-03",
+        "Value": 11.9733
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/34.jpg",
+      "DateAdded": "2020-05-07"
+    }
+  },
+  {
+    "UserName": "Maggie",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "1996-02-03",
+    "Created": "2020-06-17",
+    "LastActive": "2020-06-17",
+    "Description": "Commodo laboris incididunt exercitation minim elit sit Lorem magna ut. Ullamco deserunt tempor voluptate tempor ut adipisicing magna do nisi ad exercitation. Ea ut ipsum ipsum ex esse nulla non enim sunt ea eiusmod. Eu nisi cupidatat tempor ullamco laborum nostrud est qui. Nulla sint irure pariatur nulla proident est dolore sunt Lorem non ipsum Lorem duis.\r\n",
+    "Results": [
+      {
+        "Date": "2020-02-23",
+        "Value": 57.0591
+      },
+      {
+        "Date": "2020-05-28",
+        "Value": 22.8419
+      },
+      {
+        "Date": "2020-07-16",
+        "Value": 67.4674
+      },
+      {
+        "Date": "2020-04-08",
+        "Value": 23.7687
+      },
+      {
+        "Date": "2020-04-17",
+        "Value": 97.6452
+      },
+      {
+        "Date": "2020-03-13",
+        "Value": 43.6389
+      },
+      {
+        "Date": "2020-05-22",
+        "Value": 64.1806
+      },
+      {
+        "Date": "2020-04-29",
+        "Value": 85.075
+      },
+      {
+        "Date": "2020-07-01",
+        "Value": 96.4176
+      },
+      {
+        "Date": "2020-02-20",
+        "Value": 29.8711
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/98.jpg",
+      "DateAdded": "2020-03-30"
+    }
+  },
+  {
+    "UserName": "Tasha",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "1968-01-12",
+    "Created": "2020-08-30",
+    "LastActive": "2020-08-30",
+    "Description": "Fugiat Lorem fugiat tempor cillum veniam sunt reprehenderit nisi nostrud sint. In et nisi dolor ad nostrud do voluptate cillum velit exercitation laborum sint ullamco. Nostrud proident fugiat fugiat culpa ad in id esse voluptate. Non laboris in elit aliquip irure eu enim exercitation. Aliquip enim voluptate magna reprehenderit. Labore magna ea aliquip aliquip sit excepteur minim et cillum sunt nisi nulla amet. Sint ad eiusmod cillum consequat.\r\n",
+    "Results": [
+      {
+        "Date": "2020-06-23",
+        "Value": 82.2806
+      },
+      {
+        "Date": "2020-02-26",
+        "Value": 53.1076
+      },
+      {
+        "Date": "2020-07-26",
+        "Value": 5.2548
+      },
+      {
+        "Date": "2020-05-23",
+        "Value": 25.3531
+      },
+      {
+        "Date": "2020-03-10",
+        "Value": 39.5955
+      },
+      {
+        "Date": "2020-02-28",
+        "Value": 35.827
+      },
+      {
+        "Date": "2020-08-08",
+        "Value": 56.4266
+      },
+      {
+        "Date": "2020-04-16",
+        "Value": 70.4216
+      },
+      {
+        "Date": "2020-03-30",
+        "Value": 33.1837
+      },
+      {
+        "Date": "2020-09-04",
+        "Value": 91.5626
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/49.jpg",
+      "DateAdded": "2020-07-06"
+    }
+  },
+  {
+    "UserName": "Leslie",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "1996-01-29",
+    "Created": "2020-08-10",
+    "LastActive": "2020-08-10",
+    "Description": "Elit proident quis nulla deserunt do dolore. Sunt excepteur consectetur Lorem officia. Pariatur amet esse dolor proident consectetur aliquip veniam. Eu commodo elit eu officia tempor consequat qui fugiat tempor. Voluptate ea occaecat magna id sunt culpa exercitation cupidatat esse irure enim ea et deserunt. Excepteur dolor culpa veniam id deserunt exercitation aliquip deserunt dolore consectetur irure pariatur sint exercitation. Laborum consequat magna ea reprehenderit nisi aliqua magna anim excepteur incididunt sit.\r\n",
+    "Results": [
+      {
+        "Date": "2020-09-06",
+        "Value": 92.2854
+      },
+      {
+        "Date": "2020-08-15",
+        "Value": 47.005
+      },
+      {
+        "Date": "2020-04-01",
+        "Value": 51.8153
+      },
+      {
+        "Date": "2020-02-17",
+        "Value": 1.5204
+      },
+      {
+        "Date": "2020-07-20",
+        "Value": 8.7263
+      },
+      {
+        "Date": "2020-05-08",
+        "Value": 67.144
+      },
+      {
+        "Date": "2020-03-26",
+        "Value": 69.5186
+      },
+      {
+        "Date": "2020-05-14",
+        "Value": 91.5656
+      },
+      {
+        "Date": "2020-09-23",
+        "Value": 29.7789
+      },
+      {
+        "Date": "2020-05-17",
+        "Value": 95.806
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/12.jpg",
+      "DateAdded": "2020-03-22"
+    }
+  },
+  {
+    "UserName": "Ilene",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "1966-08-26",
+    "Created": "2020-08-29",
+    "LastActive": "2020-08-29",
+    "Description": "Minim officia est ad incididunt elit eiusmod consectetur qui tempor enim. Ea officia ipsum aliqua anim et cupidatat adipisicing reprehenderit consectetur proident labore. Labore in non officia laborum culpa est incididunt culpa adipisicing et dolor nostrud velit. Consequat nostrud laboris magna ex dolore labore ad. Ea et duis elit voluptate mollit culpa incididunt commodo sint esse anim occaecat. Eu culpa excepteur ut in qui et proident ipsum labore commodo. Dolor veniam nostrud qui nisi incididunt id nulla.\r\n",
+    "Results": [
+      {
+        "Date": "2020-06-25",
+        "Value": 23.2506
+      },
+      {
+        "Date": "2020-08-24",
+        "Value": 88.5984
+      },
+      {
+        "Date": "2020-05-27",
+        "Value": 19.1332
+      },
+      {
+        "Date": "2020-07-30",
+        "Value": 79.3599
+      },
+      {
+        "Date": "2020-07-14",
+        "Value": 48.0833
+      },
+      {
+        "Date": "2020-05-19",
+        "Value": 76.244
+      },
+      {
+        "Date": "2020-08-15",
+        "Value": 34.3877
+      },
+      {
+        "Date": "2020-03-08",
+        "Value": 46.3277
+      },
+      {
+        "Date": "2020-04-11",
+        "Value": 10.51
+      },
+      {
+        "Date": "2020-03-14",
+        "Value": 19.8429
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/84.jpg",
+      "DateAdded": "2020-02-08"
+    }
+  },
+  {
+    "UserName": "Winifred",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "1981-07-20",
+    "Created": "2020-03-13",
+    "LastActive": "2020-03-13",
+    "Description": "Deserunt dolor non commodo proident. Et est officia elit adipisicing non consectetur minim mollit cupidatat dolore non id tempor tempor. Eu quis reprehenderit elit consectetur do eu sint labore sunt est. Enim nisi nulla laborum sunt anim. Ad est occaecat pariatur pariatur enim ex sint cupidatat labore ad est minim. Anim laboris non aliqua proident elit aliquip nisi.\r\n",
+    "Results": [
+      {
+        "Date": "2020-07-15",
+        "Value": 78.4964
+      },
+      {
+        "Date": "2020-08-01",
+        "Value": 51.7706
+      },
+      {
+        "Date": "2020-02-16",
+        "Value": 85.5728
+      },
+      {
+        "Date": "2020-02-03",
+        "Value": 77.1573
+      },
+      {
+        "Date": "2020-09-27",
+        "Value": 71.1425
+      },
+      {
+        "Date": "2020-08-18",
+        "Value": 39.4405
+      },
+      {
+        "Date": "2020-09-29",
+        "Value": 96.9593
+      },
+      {
+        "Date": "2020-08-15",
+        "Value": 89.5041
+      },
+      {
+        "Date": "2020-04-15",
+        "Value": 14.4111
+      },
+      {
+        "Date": "2020-07-25",
+        "Value": 4.8904
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/45.jpg",
+      "DateAdded": "2020-06-08"
+    }
+  },
+  {
+    "UserName": "Alicia",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "1951-06-15",
+    "Created": "2020-03-23",
+    "LastActive": "2020-03-23",
+    "Description": "Do aliquip aute sit exercitation laboris cillum id anim exercitation Lorem et. Do eiusmod mollit esse est aliquip duis duis nostrud reprehenderit. Occaecat consectetur officia commodo laborum adipisicing occaecat est sint culpa proident in eu ipsum mollit. Ex do esse nisi duis mollit nisi commodo adipisicing proident aute. Cillum duis commodo minim qui ea cupidatat reprehenderit sunt enim elit non ipsum. Cillum dolor dolor nisi ad enim commodo id occaecat in. Adipisicing minim ullamco aliqua exercitation ipsum minim.\r\n",
+    "Results": [
+      {
+        "Date": "2020-03-18",
+        "Value": 53.5193
+      },
+      {
+        "Date": "2020-05-25",
+        "Value": 36.3951
+      },
+      {
+        "Date": "2020-03-15",
+        "Value": 19.1342
+      },
+      {
+        "Date": "2020-05-29",
+        "Value": 96.151
+      },
+      {
+        "Date": "2020-04-09",
+        "Value": 4.4031
+      },
+      {
+        "Date": "2020-09-16",
+        "Value": 86.1733
+      },
+      {
+        "Date": "2020-06-11",
+        "Value": 74.4052
+      },
+      {
+        "Date": "2020-08-21",
+        "Value": 16.2301
+      },
+      {
+        "Date": "2020-02-26",
+        "Value": 94.7037
+      },
+      {
+        "Date": "2020-07-04",
+        "Value": 62.8407
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/60.jpg",
+      "DateAdded": "2020-05-28"
+    }
+  },
+  {
+    "UserName": "Mandy",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "1960-08-01",
+    "Created": "2020-03-23",
+    "LastActive": "2020-03-23",
+    "Description": "Consequat excepteur enim culpa laboris qui Lorem mollit sunt culpa laboris culpa. Excepteur minim deserunt sit commodo sint. Adipisicing aliquip ea ut Lorem veniam culpa consectetur fugiat non est. Pariatur magna tempor qui et veniam laboris minim commodo incididunt occaecat id aliquip reprehenderit consequat.\r\n",
+    "Results": [
+      {
+        "Date": "2020-05-25",
+        "Value": 16.5583
+      },
+      {
+        "Date": "2020-07-11",
+        "Value": 13.3481
+      },
+      {
+        "Date": "2020-09-11",
+        "Value": 76.8111
+      },
+      {
+        "Date": "2020-02-20",
+        "Value": 67.0494
+      },
+      {
+        "Date": "2020-02-24",
+        "Value": 75.7194
+      },
+      {
+        "Date": "2020-02-01",
+        "Value": 16.9398
+      },
+      {
+        "Date": "2020-06-07",
+        "Value": 85.5651
+      },
+      {
+        "Date": "2020-07-12",
+        "Value": 79.8378
+      },
+      {
+        "Date": "2020-07-21",
+        "Value": 59.873
+      },
+      {
+        "Date": "2020-07-15",
+        "Value": 23.0423
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/17.jpg",
+      "DateAdded": "2020-02-01"
+    }
+  },
+  {
+    "UserName": "Meghan",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "1963-07-18",
+    "Created": "2020-05-12",
+    "LastActive": "2020-05-12",
+    "Description": "Anim deserunt tempor consectetur mollit. Ea amet nulla dolor ipsum Lorem et id nulla consectetur exercitation fugiat duis duis esse. Irure irure proident commodo amet veniam sit est in.\r\n",
+    "Results": [
+      {
+        "Date": "2020-07-30",
+        "Value": 36.5603
+      },
+      {
+        "Date": "2020-08-19",
+        "Value": 48.0566
+      },
+      {
+        "Date": "2020-05-16",
+        "Value": 18.56
+      },
+      {
+        "Date": "2020-07-11",
+        "Value": 16.5418
+      },
+      {
+        "Date": "2020-02-28",
+        "Value": 7.0762
+      },
+      {
+        "Date": "2020-08-08",
+        "Value": 75.1649
+      },
+      {
+        "Date": "2020-09-23",
+        "Value": 69.1326
+      },
+      {
+        "Date": "2020-03-12",
+        "Value": 64.6552
+      },
+      {
+        "Date": "2020-02-05",
+        "Value": 84.4694
+      },
+      {
+        "Date": "2020-06-07",
+        "Value": 46.3059
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/17.jpg",
+      "DateAdded": "2020-09-02"
+    }
+  },
+  {
+    "UserName": "Michael",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "1966-04-16",
+    "Created": "2020-08-05",
+    "LastActive": "2020-08-05",
+    "Description": "Minim voluptate culpa nostrud mollit elit veniam nisi exercitation ipsum aliqua consequat. Lorem sunt et elit occaecat in adipisicing qui ut eu tempor ullamco ex aliquip proident. Occaecat magna commodo aliquip ex voluptate non esse anim ut. Pariatur sint enim consectetur commodo non in dolore qui. Esse laboris ullamco velit id elit consequat aute reprehenderit.\r\n",
+    "Results": [
+      {
+        "Date": "2020-05-21",
+        "Value": 88.1767
+      },
+      {
+        "Date": "2020-08-20",
+        "Value": 60.0733
+      },
+      {
+        "Date": "2020-06-24",
+        "Value": 12.495
+      },
+      {
+        "Date": "2020-08-06",
+        "Value": 75.2761
+      },
+      {
+        "Date": "2020-05-13",
+        "Value": 36.8073
+      },
+      {
+        "Date": "2020-06-21",
+        "Value": 69.6471
+      },
+      {
+        "Date": "2020-08-31",
+        "Value": 78.5545
+      },
+      {
+        "Date": "2020-03-29",
+        "Value": 16.8665
+      },
+      {
+        "Date": "2020-04-14",
+        "Value": 74.6118
+      },
+      {
+        "Date": "2020-02-16",
+        "Value": 47.7796
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/26.jpg",
+      "DateAdded": "2020-07-20"
+    }
+  },
+  {
+    "UserName": "Ines",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "1999-08-05",
+    "Created": "2020-09-08",
+    "LastActive": "2020-09-08",
+    "Description": "Commodo proident adipisicing et laboris cupidatat esse tempor commodo Lorem consequat aliqua velit ad. Sunt quis ullamco Lorem anim est sit sint labore officia amet. Eu do anim nisi est veniam sint adipisicing Lorem ea mollit ea velit ad ex. Reprehenderit culpa voluptate ullamco aliqua mollit. Excepteur elit eiusmod dolore minim do sunt. Ex adipisicing exercitation quis excepteur laborum nulla ipsum anim id et non tempor ad. Reprehenderit mollit dolore quis velit culpa.\r\n",
+    "Results": [
+      {
+        "Date": "2020-06-05",
+        "Value": 34.8313
+      },
+      {
+        "Date": "2020-07-31",
+        "Value": 22.7805
+      },
+      {
+        "Date": "2020-09-17",
+        "Value": 32.2835
+      },
+      {
+        "Date": "2020-05-19",
+        "Value": 77.8175
+      },
+      {
+        "Date": "2020-06-07",
+        "Value": 9.2345
+      },
+      {
+        "Date": "2020-06-11",
+        "Value": 95.9088
+      },
+      {
+        "Date": "2020-08-02",
+        "Value": 61.0201
+      },
+      {
+        "Date": "2020-07-19",
+        "Value": 2.4934
+      },
+      {
+        "Date": "2020-02-01",
+        "Value": 14.3787
+      },
+      {
+        "Date": "2020-08-13",
+        "Value": 47.7111
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/35.jpg",
+      "DateAdded": "2020-03-31"
+    }
+  },
+  {
+    "UserName": "Bernadine",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "1957-02-01",
+    "Created": "2020-06-23",
+    "LastActive": "2020-06-23",
+    "Description": "Aliquip laboris laborum laboris commodo culpa est et enim ut. Tempor officia commodo do laboris culpa. Eu cupidatat eiusmod velit commodo sit nisi ut occaecat enim ipsum eu qui. Cupidatat adipisicing elit duis et aliqua labore id laborum ullamco Lorem sit. Aliqua incididunt mollit esse deserunt esse minim est in eiusmod nostrud officia officia enim incididunt. Veniam fugiat nisi cupidatat do sit laborum occaecat sint deserunt. Do cillum mollit eiusmod duis ad incididunt et do ea do voluptate sit.\r\n",
+    "Results": [
+      {
+        "Date": "2020-09-23",
+        "Value": 9.9299
+      },
+      {
+        "Date": "2020-04-09",
+        "Value": 57.1478
+      },
+      {
+        "Date": "2020-08-09",
+        "Value": 0.2622
+      },
+      {
+        "Date": "2020-03-18",
+        "Value": 5.8617
+      },
+      {
+        "Date": "2020-05-30",
+        "Value": 48.3098
+      },
+      {
+        "Date": "2020-09-24",
+        "Value": 97.6602
+      },
+      {
+        "Date": "2020-02-04",
+        "Value": 21.4351
+      },
+      {
+        "Date": "2020-07-28",
+        "Value": 11.2295
+      },
+      {
+        "Date": "2020-07-06",
+        "Value": 18.5729
+      },
+      {
+        "Date": "2020-07-21",
+        "Value": 76.2318
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/31.jpg",
+      "DateAdded": "2020-02-04"
+    }
+  },
+  {
+    "UserName": "Eileen",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "2004-07-03",
+    "Created": "2020-04-15",
+    "LastActive": "2020-04-15",
+    "Description": "Amet quis esse velit sint quis eiusmod aliqua quis mollit excepteur ea laborum labore. Ea pariatur nulla laboris deserunt qui commodo reprehenderit eu sunt anim fugiat. Id pariatur fugiat cillum ad qui ad. Ipsum labore qui et incididunt officia ad non. Tempor proident qui cupidatat aute tempor fugiat occaecat qui dolore cupidatat reprehenderit ipsum cillum nisi. Irure deserunt veniam est laboris consequat labore ad ullamco veniam. Exercitation mollit commodo eiusmod laboris dolore mollit elit laborum minim enim quis eu.\r\n",
+    "Results": [
+      {
+        "Date": "2020-03-04",
+        "Value": 94.4434
+      },
+      {
+        "Date": "2020-03-19",
+        "Value": 33.0802
+      },
+      {
+        "Date": "2020-09-26",
+        "Value": 32.5782
+      },
+      {
+        "Date": "2020-07-06",
+        "Value": 93.0538
+      },
+      {
+        "Date": "2020-08-19",
+        "Value": 10.1928
+      },
+      {
+        "Date": "2020-09-08",
+        "Value": 21.6635
+      },
+      {
+        "Date": "2020-04-06",
+        "Value": 64.28
+      },
+      {
+        "Date": "2020-06-25",
+        "Value": 51.3723
+      },
+      {
+        "Date": "2020-07-26",
+        "Value": 69.1082
+      },
+      {
+        "Date": "2020-09-27",
+        "Value": 26.8196
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/69.jpg",
+      "DateAdded": "2020-04-14"
+    }
+  },
+  {
+    "UserName": "Denise",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "1991-05-11",
+    "Created": "2020-05-24",
+    "LastActive": "2020-05-24",
+    "Description": "Non esse non tempor consequat ex exercitation elit laborum ad. Aute nisi sit aliqua ut. Quis nostrud sunt non magna dolor sit pariatur ut ea. Ipsum non magna reprehenderit aliqua velit esse ad ut veniam. Ad nulla nisi occaecat eiusmod qui officia Lorem.\r\n",
+    "Results": [
+      {
+        "Date": "2020-09-03",
+        "Value": 21.4613
+      },
+      {
+        "Date": "2020-08-21",
+        "Value": 11.0751
+      },
+      {
+        "Date": "2020-09-12",
+        "Value": 65.61
+      },
+      {
+        "Date": "2020-03-30",
+        "Value": 95.1177
+      },
+      {
+        "Date": "2020-06-22",
+        "Value": 8.2236
+      },
+      {
+        "Date": "2020-07-10",
+        "Value": 27.4174
+      },
+      {
+        "Date": "2020-07-16",
+        "Value": 49.8774
+      },
+      {
+        "Date": "2020-04-27",
+        "Value": 63.9421
+      },
+      {
+        "Date": "2020-08-02",
+        "Value": 39.9504
+      },
+      {
+        "Date": "2020-07-15",
+        "Value": 81.4257
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/35.jpg",
+      "DateAdded": "2020-07-04"
+    }
+  },
+  {
+    "UserName": "Ellen",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "1963-04-11",
+    "Created": "2020-05-08",
+    "LastActive": "2020-05-08",
+    "Description": "Ut magna cupidatat elit quis ipsum. Eu labore duis fugiat reprehenderit adipisicing occaecat quis magna ipsum aliqua laborum culpa. Nisi enim sint sunt quis veniam laboris. Dolor veniam velit tempor id sit non do commodo do ex tempor. Adipisicing minim sint proident qui ex aliqua. Mollit laborum officia aliquip sunt. Tempor dolor pariatur labore enim.\r\n",
+    "Results": [
+      {
+        "Date": "2020-03-16",
+        "Value": 96.2903
+      },
+      {
+        "Date": "2020-03-13",
+        "Value": 40.3312
+      },
+      {
+        "Date": "2020-06-04",
+        "Value": 34.7091
+      },
+      {
+        "Date": "2020-09-06",
+        "Value": 31.8079
+      },
+      {
+        "Date": "2020-09-04",
+        "Value": 8.3309
+      },
+      {
+        "Date": "2020-09-01",
+        "Value": 9.7616
+      },
+      {
+        "Date": "2020-09-28",
+        "Value": 33.768
+      },
+      {
+        "Date": "2020-02-17",
+        "Value": 38.1375
+      },
+      {
+        "Date": "2020-02-13",
+        "Value": 95.4885
+      },
+      {
+        "Date": "2020-03-22",
+        "Value": 76.1719
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/19.jpg",
+      "DateAdded": "2020-02-15"
+    }
+  },
+  {
+    "UserName": "Lena",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "1984-12-03",
+    "Created": "2020-09-10",
+    "LastActive": "2020-09-10",
+    "Description": "Cupidatat nostrud mollit consequat minim qui commodo nulla minim. Minim do pariatur nostrud adipisicing eu velit commodo tempor aliqua voluptate non anim non. Voluptate anim aute ex nulla duis deserunt est enim. Exercitation sit aliquip sunt culpa elit irure nisi commodo fugiat ullamco excepteur. Fugiat ex proident ex nulla aute veniam. Commodo id ex irure et labore ullamco. Duis occaecat velit nisi laborum qui consectetur occaecat.\r\n",
+    "Results": [
+      {
+        "Date": "2020-08-18",
+        "Value": 99.2738
+      },
+      {
+        "Date": "2020-04-10",
+        "Value": 96.2769
+      },
+      {
+        "Date": "2020-05-21",
+        "Value": 22.1278
+      },
+      {
+        "Date": "2020-07-07",
+        "Value": 59.2376
+      },
+      {
+        "Date": "2020-03-16",
+        "Value": 64.3739
+      },
+      {
+        "Date": "2020-09-15",
+        "Value": 71.4651
+      },
+      {
+        "Date": "2020-09-20",
+        "Value": 45.8802
+      },
+      {
+        "Date": "2020-04-23",
+        "Value": 31.0957
+      },
+      {
+        "Date": "2020-08-14",
+        "Value": 26.5604
+      },
+      {
+        "Date": "2020-09-28",
+        "Value": 80.7665
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/33.jpg",
+      "DateAdded": "2020-05-01"
+    }
+  },
+  {
+    "UserName": "Caitlin",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "2010-11-25",
+    "Created": "2020-04-16",
+    "LastActive": "2020-04-16",
+    "Description": "Consectetur qui velit exercitation deserunt sint aliqua in minim anim irure. Do magna nostrud qui occaecat nulla proident eiusmod velit. Ullamco irure culpa velit id aliquip deserunt ut cillum adipisicing laborum irure. Fugiat et aliquip occaecat nisi nulla cupidatat sit exercitation qui consequat labore consequat. Labore aliquip velit laboris laboris eu sit consectetur aute adipisicing. Ad exercitation dolore nulla quis tempor do magna dolor exercitation incididunt est veniam do. Fugiat magna qui consequat et qui.\r\n",
+    "Results": [
+      {
+        "Date": "2020-02-29",
+        "Value": 4.9691
+      },
+      {
+        "Date": "2020-04-22",
+        "Value": 41.8271
+      },
+      {
+        "Date": "2020-08-02",
+        "Value": 80.5761
+      },
+      {
+        "Date": "2020-08-31",
+        "Value": 33.469
+      },
+      {
+        "Date": "2020-03-17",
+        "Value": 9.093
+      },
+      {
+        "Date": "2020-08-11",
+        "Value": 30.4479
+      },
+      {
+        "Date": "2020-07-11",
+        "Value": 71.0214
+      },
+      {
+        "Date": "2020-03-20",
+        "Value": 82.6376
+      },
+      {
+        "Date": "2020-05-14",
+        "Value": 79.7833
+      },
+      {
+        "Date": "2020-08-05",
+        "Value": 49.8617
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/42.jpg",
+      "DateAdded": "2020-03-26"
+    }
+  },
+  {
+    "UserName": "Rita",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "1972-04-04",
+    "Created": "2020-05-27",
+    "LastActive": "2020-05-27",
+    "Description": "Ullamco id sunt eu dolor ea nisi eu excepteur dolore commodo eu. Ad aute irure fugiat cupidatat et ad dolore. Tempor ut ex enim qui laboris laboris ipsum ea.\r\n",
+    "Results": [
+      {
+        "Date": "2020-03-13",
+        "Value": 13.0629
+      },
+      {
+        "Date": "2020-02-09",
+        "Value": 15.0907
+      },
+      {
+        "Date": "2020-03-30",
+        "Value": 63.6123
+      },
+      {
+        "Date": "2020-05-22",
+        "Value": 43.7136
+      },
+      {
+        "Date": "2020-04-09",
+        "Value": 53.9172
+      },
+      {
+        "Date": "2020-05-21",
+        "Value": 59.0609
+      },
+      {
+        "Date": "2020-05-26",
+        "Value": 60.5304
+      },
+      {
+        "Date": "2020-09-07",
+        "Value": 56.1046
+      },
+      {
+        "Date": "2020-06-18",
+        "Value": 56.1241
+      },
+      {
+        "Date": "2020-06-13",
+        "Value": 63.5174
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/41.jpg",
+      "DateAdded": "2020-04-21"
+    }
+  },
+  {
+    "UserName": "Zelma",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "1965-02-01",
+    "Created": "2020-07-10",
+    "LastActive": "2020-07-10",
+    "Description": "Sunt cillum ut irure esse. Labore aute sunt consequat consequat et aliquip irure duis sunt aliquip velit qui officia aliqua. Elit proident dolore et minim labore sunt ex deserunt reprehenderit dolore eiusmod tempor consequat. Non excepteur aliqua cillum magna duis quis consequat Lorem labore excepteur id occaecat dolore.\r\n",
+    "Results": [
+      {
+        "Date": "2020-04-14",
+        "Value": 36.4908
+      },
+      {
+        "Date": "2020-08-20",
+        "Value": 15.2154
+      },
+      {
+        "Date": "2020-09-18",
+        "Value": 68.7412
+      },
+      {
+        "Date": "2020-09-01",
+        "Value": 72.0627
+      },
+      {
+        "Date": "2020-08-23",
+        "Value": 4.9354
+      },
+      {
+        "Date": "2020-05-10",
+        "Value": 52.5519
+      },
+      {
+        "Date": "2020-05-24",
+        "Value": 11.3104
+      },
+      {
+        "Date": "2020-05-02",
+        "Value": 16.6832
+      },
+      {
+        "Date": "2020-03-16",
+        "Value": 71.2873
+      },
+      {
+        "Date": "2020-04-08",
+        "Value": 95.1068
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/35.jpg",
+      "DateAdded": "2020-02-05"
+    }
+  },
+  {
+    "UserName": "Rosanna",
+    "Password": "password",
+    "Gender": "kobieta",
+    "DateOfBirth": "2006-12-06",
+    "Created": "2020-05-23",
+    "LastActive": "2020-05-23",
+    "Description": "Esse eiusmod ipsum nostrud culpa cupidatat tempor et eiusmod sit dolor et cillum laborum consectetur. Aliqua ex officia veniam laboris. Sit pariatur do consequat nisi. Incididunt cupidatat cupidatat enim voluptate officia nulla in esse.\r\n",
+    "Results": [
+      {
+        "Date": "2020-03-15",
+        "Value": 41.5414
+      },
+      {
+        "Date": "2020-08-18",
+        "Value": 15.3123
+      },
+      {
+        "Date": "2020-09-14",
+        "Value": 73.9539
+      },
+      {
+        "Date": "2020-06-11",
+        "Value": 82.723
+      },
+      {
+        "Date": "2020-06-03",
+        "Value": 96.26
+      },
+      {
+        "Date": "2020-07-28",
+        "Value": 23.4858
+      },
+      {
+        "Date": "2020-05-28",
+        "Value": 3.6
+      },
+      {
+        "Date": "2020-03-27",
+        "Value": 66.2742
+      },
+      {
+        "Date": "2020-02-22",
+        "Value": 73.6728
+      },
+      {
+        "Date": "2020-03-22",
+        "Value": 8.9185
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/women/2.jpg",
+      "DateAdded": "2020-07-10"
+    }
+  },
+  {
+    "UserName": "Ross",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "1992-10-21",
+    "Created": "2020-04-04",
+    "LastActive": "2020-04-04",
+    "Description": "Enim consequat do deserunt cillum anim minim non occaecat dolor cillum elit in enim aliquip. Laborum tempor non id elit commodo ad. Mollit culpa excepteur elit exercitation.\r\n",
+    "Results": [
+      {
+        "Date": "2020-04-02",
+        "Value": 0.9165
+      },
+      {
+        "Date": "2020-09-25",
+        "Value": 16.9423
+      },
+      {
+        "Date": "2020-08-14",
+        "Value": 72.4221
+      },
+      {
+        "Date": "2020-05-03",
+        "Value": 72.3564
+      },
+      {
+        "Date": "2020-02-20",
+        "Value": 79.7859
+      },
+      {
+        "Date": "2020-07-06",
+        "Value": 88.5076
+      },
+      {
+        "Date": "2020-08-01",
+        "Value": 56.8651
+      },
+      {
+        "Date": "2020-03-14",
+        "Value": 10.345
+      },
+      {
+        "Date": "2020-09-10",
+        "Value": 18.6005
+      },
+      {
+        "Date": "2020-03-23",
+        "Value": 64.8106
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/77.jpg",
+      "DateAdded": "2020-09-04"
+    }
+  },
+  {
+    "UserName": "Knight",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "2001-08-25",
+    "Created": "2020-05-26",
+    "LastActive": "2020-05-26",
+    "Description": "Magna elit cupidatat Lorem occaecat enim id velit ad esse aliqua ipsum. Nisi id enim ea eu. Ullamco eiusmod irure consectetur laboris mollit veniam quis. Enim tempor non labore officia irure pariatur adipisicing eiusmod aliqua aute velit fugiat minim sunt.\r\n",
+    "Results": [
+      {
+        "Date": "2020-04-03",
+        "Value": 17.9943
+      },
+      {
+        "Date": "2020-08-04",
+        "Value": 80.6444
+      },
+      {
+        "Date": "2020-05-31",
+        "Value": 32.1676
+      },
+      {
+        "Date": "2020-05-27",
+        "Value": 4.2317
+      },
+      {
+        "Date": "2020-06-21",
+        "Value": 23.4269
+      },
+      {
+        "Date": "2020-04-16",
+        "Value": 63.1656
+      },
+      {
+        "Date": "2020-05-01",
+        "Value": 70.9769
+      },
+      {
+        "Date": "2020-05-08",
+        "Value": 65.8613
+      },
+      {
+        "Date": "2020-07-19",
+        "Value": 72.6549
+      },
+      {
+        "Date": "2020-03-07",
+        "Value": 25.9429
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/40.jpg",
+      "DateAdded": "2020-08-11"
+    }
+  },
+  {
+    "UserName": "Steele",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "1970-04-26",
+    "Created": "2020-09-08",
+    "LastActive": "2020-09-08",
+    "Description": "Consequat excepteur voluptate irure enim tempor dolore pariatur ex nulla dolore qui laboris et consectetur. Sint laborum nisi cupidatat officia aliqua eiusmod magna fugiat velit fugiat irure proident. Cupidatat nulla cillum mollit eiusmod ad pariatur velit pariatur Lorem pariatur.\r\n",
+    "Results": [
+      {
+        "Date": "2020-08-10",
+        "Value": 21.3318
+      },
+      {
+        "Date": "2020-06-04",
+        "Value": 22.0941
+      },
+      {
+        "Date": "2020-04-28",
+        "Value": 16.4047
+      },
+      {
+        "Date": "2020-07-25",
+        "Value": 47.346
+      },
+      {
+        "Date": "2020-04-26",
+        "Value": 27.2361
+      },
+      {
+        "Date": "2020-06-11",
+        "Value": 23.6569
+      },
+      {
+        "Date": "2020-05-28",
+        "Value": 55.1719
+      },
+      {
+        "Date": "2020-09-20",
+        "Value": 71.7682
+      },
+      {
+        "Date": "2020-06-08",
+        "Value": 76.8572
+      },
+      {
+        "Date": "2020-08-03",
+        "Value": 91.3631
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/42.jpg",
+      "DateAdded": "2020-03-07"
+    }
+  },
+  {
+    "UserName": "Peters",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "1988-05-08",
+    "Created": "2020-03-31",
+    "LastActive": "2020-03-31",
+    "Description": "Ex minim fugiat quis Lorem commodo reprehenderit consequat ut veniam. Et nisi pariatur cillum laboris cupidatat. Excepteur velit commodo ipsum est excepteur ipsum exercitation irure voluptate culpa dolor pariatur eiusmod voluptate. Dolore occaecat eu et esse est.\r\n",
+    "Results": [
+      {
+        "Date": "2020-08-06",
+        "Value": 45.7671
+      },
+      {
+        "Date": "2020-02-27",
+        "Value": 15.0036
+      },
+      {
+        "Date": "2020-09-08",
+        "Value": 51.529
+      },
+      {
+        "Date": "2020-07-22",
+        "Value": 61.7029
+      },
+      {
+        "Date": "2020-03-16",
+        "Value": 48.1284
+      },
+      {
+        "Date": "2020-08-05",
+        "Value": 17.6158
+      },
+      {
+        "Date": "2020-07-17",
+        "Value": 79.8868
+      },
+      {
+        "Date": "2020-09-22",
+        "Value": 47.1339
+      },
+      {
+        "Date": "2020-09-15",
+        "Value": 97.1887
+      },
+      {
+        "Date": "2020-06-24",
+        "Value": 56.6301
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/19.jpg",
+      "DateAdded": "2020-09-14"
+    }
+  },
+  {
+    "UserName": "Frank",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "1959-01-01",
+    "Created": "2020-04-27",
+    "LastActive": "2020-04-27",
+    "Description": "Quis ea dolor ipsum dolore. Cupidatat cillum duis proident voluptate ad excepteur est nisi aute do consectetur sunt laboris Lorem. Minim laborum amet commodo est aute aliquip adipisicing laborum ea eiusmod. Elit irure pariatur reprehenderit magna eu minim consectetur labore pariatur excepteur. Nulla duis fugiat cupidatat ut ipsum proident dolor. Ut tempor sit id consectetur qui.\r\n",
+    "Results": [
+      {
+        "Date": "2020-08-24",
+        "Value": 9.4281
+      },
+      {
+        "Date": "2020-09-22",
+        "Value": 3.1262
+      },
+      {
+        "Date": "2020-02-05",
+        "Value": 8.2979
+      },
+      {
+        "Date": "2020-08-13",
+        "Value": 13.4861
+      },
+      {
+        "Date": "2020-07-11",
+        "Value": 8.2577
+      },
+      {
+        "Date": "2020-06-24",
+        "Value": 30.1013
+      },
+      {
+        "Date": "2020-07-17",
+        "Value": 2.4537
+      },
+      {
+        "Date": "2020-04-29",
+        "Value": 23.6762
+      },
+      {
+        "Date": "2020-03-01",
+        "Value": 89.0051
+      },
+      {
+        "Date": "2020-05-22",
+        "Value": 82.8071
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/52.jpg",
+      "DateAdded": "2020-04-21"
+    }
+  },
+  {
+    "UserName": "Rice",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "1968-12-21",
+    "Created": "2020-07-28",
+    "LastActive": "2020-07-28",
+    "Description": "Labore ea tempor officia cillum eu id culpa. Irure labore id veniam ipsum dolor. Ullamco elit laboris laboris non laborum esse irure consequat nostrud et est ad. Irure veniam labore ex fugiat. Velit in laboris ea adipisicing do adipisicing. Do qui velit tempor qui eiusmod.\r\n",
+    "Results": [
+      {
+        "Date": "2020-07-25",
+        "Value": 27.7791
+      },
+      {
+        "Date": "2020-05-04",
+        "Value": 48.9386
+      },
+      {
+        "Date": "2020-07-21",
+        "Value": 9.98
+      },
+      {
+        "Date": "2020-03-16",
+        "Value": 85.1076
+      },
+      {
+        "Date": "2020-08-01",
+        "Value": 21.2512
+      },
+      {
+        "Date": "2020-06-29",
+        "Value": 90.3316
+      },
+      {
+        "Date": "2020-07-16",
+        "Value": 87.6088
+      },
+      {
+        "Date": "2020-06-10",
+        "Value": 60.5695
+      },
+      {
+        "Date": "2020-08-05",
+        "Value": 73.5614
+      },
+      {
+        "Date": "2020-05-05",
+        "Value": 89.9918
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/34.jpg",
+      "DateAdded": "2020-05-02"
+    }
+  },
+  {
+    "UserName": "Schneider",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "1954-04-01",
+    "Created": "2020-08-19",
+    "LastActive": "2020-08-19",
+    "Description": "Proident mollit aute nisi sunt dolor enim velit laboris veniam ut pariatur. Ipsum quis dolore incididunt reprehenderit duis consequat. Sint anim magna duis non adipisicing consequat. Enim incididunt amet id officia commodo nisi ullamco ipsum nulla cupidatat irure. Proident eiusmod excepteur velit ut do. Duis eiusmod ut commodo aliqua aute fugiat nostrud ea sit magna nisi reprehenderit Lorem ea. Voluptate ex sint nostrud esse laborum proident culpa incididunt sunt aliqua incididunt ut velit tempor.\r\n",
+    "Results": [
+      {
+        "Date": "2020-09-12",
+        "Value": 54.1068
+      },
+      {
+        "Date": "2020-05-06",
+        "Value": 36.0157
+      },
+      {
+        "Date": "2020-04-26",
+        "Value": 93.4573
+      },
+      {
+        "Date": "2020-04-19",
+        "Value": 77.9916
+      },
+      {
+        "Date": "2020-05-23",
+        "Value": 17.9805
+      },
+      {
+        "Date": "2020-04-17",
+        "Value": 35.3337
+      },
+      {
+        "Date": "2020-04-29",
+        "Value": 57.7275
+      },
+      {
+        "Date": "2020-07-23",
+        "Value": 2.715
+      },
+      {
+        "Date": "2020-08-18",
+        "Value": 3.0608
+      },
+      {
+        "Date": "2020-04-06",
+        "Value": 38.964
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/97.jpg",
+      "DateAdded": "2020-06-07"
+    }
+  },
+  {
+    "UserName": "Whitfield",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "1993-04-11",
+    "Created": "2020-07-27",
+    "LastActive": "2020-07-27",
+    "Description": "Officia do enim deserunt eiusmod occaecat irure elit qui tempor. Enim incididunt labore dolor aliqua reprehenderit ipsum reprehenderit deserunt mollit dolore elit. Aute dolor qui consequat fugiat in. Reprehenderit ut dolore voluptate dolor veniam esse consectetur dolor tempor pariatur nulla. Mollit elit amet ullamco sint qui sint est laborum pariatur adipisicing ad nostrud proident irure. Irure incididunt aliqua ut commodo esse aliqua.\r\n",
+    "Results": [
+      {
+        "Date": "2020-06-29",
+        "Value": 24.7506
+      },
+      {
+        "Date": "2020-05-05",
+        "Value": 17.4513
+      },
+      {
+        "Date": "2020-03-24",
+        "Value": 3.3801
+      },
+      {
+        "Date": "2020-05-11",
+        "Value": 98.4886
+      },
+      {
+        "Date": "2020-08-20",
+        "Value": 64.854
+      },
+      {
+        "Date": "2020-03-15",
+        "Value": 73.9201
+      },
+      {
+        "Date": "2020-05-08",
+        "Value": 27.4056
+      },
+      {
+        "Date": "2020-06-05",
+        "Value": 26.3812
+      },
+      {
+        "Date": "2020-09-27",
+        "Value": 80.3797
+      },
+      {
+        "Date": "2020-05-10",
+        "Value": 97.3398
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/16.jpg",
+      "DateAdded": "2020-04-05"
+    }
+  },
+  {
+    "UserName": "Burris",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "1970-10-25",
+    "Created": "2020-04-17",
+    "LastActive": "2020-04-17",
+    "Description": "Velit esse eu anim sunt magna. Eiusmod in incididunt deserunt quis adipisicing ipsum. Sint reprehenderit aliquip aliquip aliqua fugiat sint deserunt amet ullamco culpa eu velit. Voluptate et enim do eu esse. Laboris do velit enim aliqua. Veniam ea cillum sint Lorem officia qui officia reprehenderit deserunt consectetur. Nisi proident reprehenderit ipsum nulla est qui duis excepteur.\r\n",
+    "Results": [
+      {
+        "Date": "2020-09-07",
+        "Value": 69.339
+      },
+      {
+        "Date": "2020-08-13",
+        "Value": 7.482
+      },
+      {
+        "Date": "2020-08-28",
+        "Value": 90.2602
+      },
+      {
+        "Date": "2020-08-12",
+        "Value": 49.051
+      },
+      {
+        "Date": "2020-04-24",
+        "Value": 47.8024
+      },
+      {
+        "Date": "2020-03-05",
+        "Value": 5.4841
+      },
+      {
+        "Date": "2020-08-06",
+        "Value": 97.1533
+      },
+      {
+        "Date": "2020-07-26",
+        "Value": 75.4395
+      },
+      {
+        "Date": "2020-08-05",
+        "Value": 52.5671
+      },
+      {
+        "Date": "2020-02-20",
+        "Value": 4.8722
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/27.jpg",
+      "DateAdded": "2020-09-03"
+    }
+  },
+  {
+    "UserName": "Holmes",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "2007-03-07",
+    "Created": "2020-02-01",
+    "LastActive": "2020-02-01",
+    "Description": "Laborum labore sint deserunt deserunt non aliquip minim velit ipsum eu. Aliqua labore et cillum occaecat qui laboris in qui ex reprehenderit nulla excepteur anim est. Esse reprehenderit commodo labore ea excepteur tempor excepteur aute. Fugiat dolore quis labore quis et proident sunt occaecat. Consequat aliqua in eu sit eu et. Commodo aute proident voluptate dolor voluptate quis officia. Proident fugiat irure reprehenderit ullamco reprehenderit tempor sint enim aliquip labore.\r\n",
+    "Results": [
+      {
+        "Date": "2020-03-01",
+        "Value": 6.3661
+      },
+      {
+        "Date": "2020-09-17",
+        "Value": 67.6534
+      },
+      {
+        "Date": "2020-02-25",
+        "Value": 6.6113
+      },
+      {
+        "Date": "2020-08-15",
+        "Value": 66.9772
+      },
+      {
+        "Date": "2020-07-20",
+        "Value": 55.6343
+      },
+      {
+        "Date": "2020-04-17",
+        "Value": 28.1347
+      },
+      {
+        "Date": "2020-02-18",
+        "Value": 43.6954
+      },
+      {
+        "Date": "2020-04-04",
+        "Value": 78.3749
+      },
+      {
+        "Date": "2020-08-24",
+        "Value": 50.5367
+      },
+      {
+        "Date": "2020-08-26",
+        "Value": 59.447
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/84.jpg",
+      "DateAdded": "2020-04-19"
+    }
+  },
+  {
+    "UserName": "Leonard",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "1965-05-20",
+    "Created": "2020-07-13",
+    "LastActive": "2020-07-13",
+    "Description": "Fugiat eu proident voluptate aute ad voluptate eiusmod nisi. In non sint qui proident et ipsum dolore non et occaecat. Consequat incididunt eu reprehenderit cupidatat anim minim eiusmod occaecat minim.\r\n",
+    "Results": [
+      {
+        "Date": "2020-07-02",
+        "Value": 75.587
+      },
+      {
+        "Date": "2020-05-10",
+        "Value": 92.7015
+      },
+      {
+        "Date": "2020-04-05",
+        "Value": 25.6821
+      },
+      {
+        "Date": "2020-08-08",
+        "Value": 54.2492
+      },
+      {
+        "Date": "2020-03-11",
+        "Value": 68.7597
+      },
+      {
+        "Date": "2020-02-04",
+        "Value": 32.871
+      },
+      {
+        "Date": "2020-03-15",
+        "Value": 90.8865
+      },
+      {
+        "Date": "2020-06-28",
+        "Value": 4.3547
+      },
+      {
+        "Date": "2020-04-05",
+        "Value": 76.5089
+      },
+      {
+        "Date": "2020-07-27",
+        "Value": 88.6021
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/15.jpg",
+      "DateAdded": "2020-03-23"
+    }
+  },
+  {
+    "UserName": "Hampton",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "2003-12-21",
+    "Created": "2020-05-19",
+    "LastActive": "2020-05-19",
+    "Description": "Dolor quis eu cillum laboris ullamco consequat sint non voluptate amet sit qui aliquip. Adipisicing Lorem veniam duis minim. Proident dolore dolor aliqua dolore consequat ex esse ea non eu sit aliquip sint excepteur.\r\n",
+    "Results": [
+      {
+        "Date": "2020-08-06",
+        "Value": 4.9438
+      },
+      {
+        "Date": "2020-02-25",
+        "Value": 90.0467
+      },
+      {
+        "Date": "2020-07-31",
+        "Value": 13.0973
+      },
+      {
+        "Date": "2020-03-10",
+        "Value": 8.4137
+      },
+      {
+        "Date": "2020-07-15",
+        "Value": 19.4597
+      },
+      {
+        "Date": "2020-07-30",
+        "Value": 80.5928
+      },
+      {
+        "Date": "2020-04-28",
+        "Value": 53.276
+      },
+      {
+        "Date": "2020-02-20",
+        "Value": 75.7121
+      },
+      {
+        "Date": "2020-07-23",
+        "Value": 65.9436
+      },
+      {
+        "Date": "2020-07-27",
+        "Value": 14.0438
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/85.jpg",
+      "DateAdded": "2020-02-29"
+    }
+  },
+  {
+    "UserName": "Campbell",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "1983-02-27",
+    "Created": "2020-04-06",
+    "LastActive": "2020-04-06",
+    "Description": "Commodo pariatur consequat aute minim nulla id cillum sit minim occaecat ad ea labore. Mollit et aliquip duis anim minim aliquip laborum nisi Lorem. Eiusmod tempor laborum Lorem exercitation mollit esse proident voluptate irure adipisicing quis. Sint eu proident sunt deserunt aute. Aliqua nisi quis eu ullamco non ullamco et exercitation ipsum adipisicing do cillum ea.\r\n",
+    "Results": [
+      {
+        "Date": "2020-05-19",
+        "Value": 10.9264
+      },
+      {
+        "Date": "2020-06-21",
+        "Value": 59.0389
+      },
+      {
+        "Date": "2020-06-11",
+        "Value": 72.8543
+      },
+      {
+        "Date": "2020-05-19",
+        "Value": 39.9678
+      },
+      {
+        "Date": "2020-03-08",
+        "Value": 8.6191
+      },
+      {
+        "Date": "2020-03-06",
+        "Value": 30.7376
+      },
+      {
+        "Date": "2020-08-21",
+        "Value": 60.6426
+      },
+      {
+        "Date": "2020-04-23",
+        "Value": 22.5595
+      },
+      {
+        "Date": "2020-05-31",
+        "Value": 91.1328
+      },
+      {
+        "Date": "2020-08-20",
+        "Value": 2.3777
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/74.jpg",
+      "DateAdded": "2020-03-02"
+    }
+  },
+  {
+    "UserName": "Koch",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "2008-07-24",
+    "Created": "2020-02-21",
+    "LastActive": "2020-02-21",
+    "Description": "Sint non nulla veniam commodo proident consequat fugiat est laboris id deserunt excepteur. Amet cillum anim exercitation nulla. Labore consequat anim aliqua eu fugiat non do nostrud dolor excepteur aute.\r\n",
+    "Results": [
+      {
+        "Date": "2020-07-27",
+        "Value": 76.2025
+      },
+      {
+        "Date": "2020-06-13",
+        "Value": 32.4419
+      },
+      {
+        "Date": "2020-04-06",
+        "Value": 86.795
+      },
+      {
+        "Date": "2020-08-29",
+        "Value": 27.7683
+      },
+      {
+        "Date": "2020-05-08",
+        "Value": 70.9108
+      },
+      {
+        "Date": "2020-04-10",
+        "Value": 85.3995
+      },
+      {
+        "Date": "2020-05-13",
+        "Value": 73.1948
+      },
+      {
+        "Date": "2020-04-15",
+        "Value": 82.8641
+      },
+      {
+        "Date": "2020-09-19",
+        "Value": 9.5837
+      },
+      {
+        "Date": "2020-03-21",
+        "Value": 28.8622
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/65.jpg",
+      "DateAdded": "2020-05-02"
+    }
+  },
+  {
+    "UserName": "Bray",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "1957-10-28",
+    "Created": "2020-02-19",
+    "LastActive": "2020-02-19",
+    "Description": "Laboris mollit commodo commodo anim ea eiusmod commodo mollit Lorem minim elit magna anim anim. Elit esse tempor esse Lorem esse sunt cillum eu. Laborum aute ad proident cupidatat sit veniam anim aute elit. Ex sunt proident officia enim sit.\r\n",
+    "Results": [
+      {
+        "Date": "2020-06-16",
+        "Value": 33.9043
+      },
+      {
+        "Date": "2020-05-26",
+        "Value": 60.4148
+      },
+      {
+        "Date": "2020-08-13",
+        "Value": 18.6517
+      },
+      {
+        "Date": "2020-08-04",
+        "Value": 28.6128
+      },
+      {
+        "Date": "2020-09-25",
+        "Value": 41.1197
+      },
+      {
+        "Date": "2020-02-10",
+        "Value": 38.4135
+      },
+      {
+        "Date": "2020-07-20",
+        "Value": 35.9252
+      },
+      {
+        "Date": "2020-08-23",
+        "Value": 37.9456
+      },
+      {
+        "Date": "2020-09-24",
+        "Value": 34.3447
+      },
+      {
+        "Date": "2020-05-28",
+        "Value": 23.4515
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/63.jpg",
+      "DateAdded": "2020-08-10"
+    }
+  },
+  {
+    "UserName": "Oneill",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "1994-08-28",
+    "Created": "2020-02-11",
+    "LastActive": "2020-02-11",
+    "Description": "Proident nisi in sint id sunt in reprehenderit ut magna. Non dolore officia est excepteur ullamco aliquip exercitation cupidatat eu elit. Officia ipsum quis deserunt sit dolor exercitation officia labore consequat irure. Cillum ex quis incididunt nostrud eiusmod ipsum fugiat anim ex.\r\n",
+    "Results": [
+      {
+        "Date": "2020-07-03",
+        "Value": 52.1685
+      },
+      {
+        "Date": "2020-06-13",
+        "Value": 27.4124
+      },
+      {
+        "Date": "2020-08-06",
+        "Value": 57.5099
+      },
+      {
+        "Date": "2020-08-30",
+        "Value": 32.1355
+      },
+      {
+        "Date": "2020-07-29",
+        "Value": 56.1714
+      },
+      {
+        "Date": "2020-04-12",
+        "Value": 36.8731
+      },
+      {
+        "Date": "2020-05-02",
+        "Value": 84.2682
+      },
+      {
+        "Date": "2020-02-07",
+        "Value": 23.0939
+      },
+      {
+        "Date": "2020-08-05",
+        "Value": 80.7909
+      },
+      {
+        "Date": "2020-06-27",
+        "Value": 54.3712
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/3.jpg",
+      "DateAdded": "2020-09-09"
+    }
+  },
+  {
+    "UserName": "Guthrie",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "1965-09-11",
+    "Created": "2020-04-17",
+    "LastActive": "2020-04-17",
+    "Description": "Tempor ullamco proident ut adipisicing. Fugiat voluptate qui sunt cillum nulla cillum ex nostrud veniam enim culpa anim. Do duis ullamco aliqua nisi commodo. In voluptate magna magna consequat laboris sit in incididunt non ad incididunt fugiat ad.\r\n",
+    "Results": [
+      {
+        "Date": "2020-08-20",
+        "Value": 43.8177
+      },
+      {
+        "Date": "2020-02-03",
+        "Value": 17.5742
+      },
+      {
+        "Date": "2020-07-15",
+        "Value": 51.2146
+      },
+      {
+        "Date": "2020-02-28",
+        "Value": 21.8155
+      },
+      {
+        "Date": "2020-06-17",
+        "Value": 20.6918
+      },
+      {
+        "Date": "2020-04-02",
+        "Value": 85.3285
+      },
+      {
+        "Date": "2020-06-07",
+        "Value": 15.852
+      },
+      {
+        "Date": "2020-05-10",
+        "Value": 71.2268
+      },
+      {
+        "Date": "2020-05-14",
+        "Value": 44.5542
+      },
+      {
+        "Date": "2020-08-17",
+        "Value": 25.813
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/19.jpg",
+      "DateAdded": "2020-09-10"
+    }
+  },
+  {
+    "UserName": "Maynard",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "1955-04-21",
+    "Created": "2020-05-16",
+    "LastActive": "2020-05-16",
+    "Description": "Duis qui sint occaecat dolore nisi. Minim do ea adipisicing dolor magna proident nostrud anim esse. Quis irure ad laborum excepteur nisi adipisicing pariatur consectetur occaecat aliqua officia. Anim fugiat eu labore anim minim in minim excepteur officia consequat mollit. Sunt adipisicing culpa esse esse exercitation nisi. Qui occaecat cillum fugiat nostrud.\r\n",
+    "Results": [
+      {
+        "Date": "2020-09-23",
+        "Value": 72.3979
+      },
+      {
+        "Date": "2020-05-25",
+        "Value": 28.8719
+      },
+      {
+        "Date": "2020-03-03",
+        "Value": 97.5485
+      },
+      {
+        "Date": "2020-03-05",
+        "Value": 80.1935
+      },
+      {
+        "Date": "2020-09-06",
+        "Value": 38.2741
+      },
+      {
+        "Date": "2020-07-07",
+        "Value": 53.1675
+      },
+      {
+        "Date": "2020-02-02",
+        "Value": 17.1333
+      },
+      {
+        "Date": "2020-02-08",
+        "Value": 81.7281
+      },
+      {
+        "Date": "2020-02-22",
+        "Value": 77.2609
+      },
+      {
+        "Date": "2020-09-24",
+        "Value": 1.9826
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/62.jpg",
+      "DateAdded": "2020-09-01"
+    }
+  },
+  {
+    "UserName": "Clarke",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "2001-08-03",
+    "Created": "2020-08-21",
+    "LastActive": "2020-08-21",
+    "Description": "Eu pariatur laboris consectetur in voluptate culpa aute ex tempor est sunt et et aliquip. Esse irure ea tempor sunt ullamco. Tempor reprehenderit labore commodo occaecat nulla qui cillum mollit in amet. Nisi consequat ut magna excepteur. Eu ex dolor proident ea irure eiusmod cillum anim. Tempor elit veniam sunt laborum mollit Lorem consectetur. Amet adipisicing do deserunt occaecat proident in.\r\n",
+    "Results": [
+      {
+        "Date": "2020-06-09",
+        "Value": 95.2582
+      },
+      {
+        "Date": "2020-07-23",
+        "Value": 79.255
+      },
+      {
+        "Date": "2020-02-15",
+        "Value": 35.9576
+      },
+      {
+        "Date": "2020-09-05",
+        "Value": 63.3437
+      },
+      {
+        "Date": "2020-03-21",
+        "Value": 29.5341
+      },
+      {
+        "Date": "2020-08-06",
+        "Value": 64.2344
+      },
+      {
+        "Date": "2020-08-14",
+        "Value": 62.9569
+      },
+      {
+        "Date": "2020-08-09",
+        "Value": 94.9808
+      },
+      {
+        "Date": "2020-04-04",
+        "Value": 14.765
+      },
+      {
+        "Date": "2020-05-15",
+        "Value": 23.8125
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/71.jpg",
+      "DateAdded": "2020-04-23"
+    }
+  },
+  {
+    "UserName": "Garrett",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "1971-10-16",
+    "Created": "2020-06-15",
+    "LastActive": "2020-06-15",
+    "Description": "Minim ad velit laborum voluptate sint excepteur labore occaecat ea aliqua sit sunt. Sunt irure dolor ipsum duis voluptate veniam ea elit pariatur culpa nulla. Officia amet enim proident Lorem eu. Sit Lorem commodo nostrud enim Lorem nisi. Pariatur reprehenderit dolor sit occaecat ut ut duis cupidatat consequat et ex quis labore. Nostrud occaecat non aliquip officia quis.\r\n",
+    "Results": [
+      {
+        "Date": "2020-06-04",
+        "Value": 67.311
+      },
+      {
+        "Date": "2020-02-18",
+        "Value": 17.638
+      },
+      {
+        "Date": "2020-05-02",
+        "Value": 16.205
+      },
+      {
+        "Date": "2020-03-26",
+        "Value": 76.8989
+      },
+      {
+        "Date": "2020-03-07",
+        "Value": 29.9204
+      },
+      {
+        "Date": "2020-02-24",
+        "Value": 22.5405
+      },
+      {
+        "Date": "2020-03-25",
+        "Value": 79.4865
+      },
+      {
+        "Date": "2020-03-27",
+        "Value": 17.8286
+      },
+      {
+        "Date": "2020-02-24",
+        "Value": 12.5737
+      },
+      {
+        "Date": "2020-02-23",
+        "Value": 19.5006
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/69.jpg",
+      "DateAdded": "2020-03-26"
+    }
+  },
+  {
+    "UserName": "Blackwell",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "1963-07-23",
+    "Created": "2020-09-10",
+    "LastActive": "2020-09-10",
+    "Description": "Irure minim dolor aliqua eiusmod elit anim consequat ut et exercitation. Irure nisi aliqua fugiat sunt cillum. Sint sit cupidatat esse excepteur ut pariatur nostrud Lorem est est qui deserunt fugiat. Ad mollit nisi anim cillum do nisi nulla occaecat id pariatur in consectetur eu. Nulla cupidatat fugiat enim voluptate.\r\n",
+    "Results": [
+      {
+        "Date": "2020-08-20",
+        "Value": 5.2008
+      },
+      {
+        "Date": "2020-02-07",
+        "Value": 77.0522
+      },
+      {
+        "Date": "2020-08-08",
+        "Value": 70.7143
+      },
+      {
+        "Date": "2020-04-11",
+        "Value": 90.1533
+      },
+      {
+        "Date": "2020-09-02",
+        "Value": 93.9584
+      },
+      {
+        "Date": "2020-02-11",
+        "Value": 63.758
+      },
+      {
+        "Date": "2020-03-06",
+        "Value": 64.9865
+      },
+      {
+        "Date": "2020-05-17",
+        "Value": 36.9049
+      },
+      {
+        "Date": "2020-08-18",
+        "Value": 40.3435
+      },
+      {
+        "Date": "2020-08-23",
+        "Value": 29.1855
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/17.jpg",
+      "DateAdded": "2020-09-21"
+    }
+  },
+  {
+    "UserName": "Gates",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "2004-11-05",
+    "Created": "2020-08-02",
+    "LastActive": "2020-08-02",
+    "Description": "Exercitation commodo aute velit est incididunt velit exercitation. Laborum nostrud duis consequat tempor aliqua elit. Quis duis commodo in cillum exercitation duis fugiat sunt eiusmod consectetur sint aliquip. Occaecat pariatur cupidatat anim nisi deserunt ullamco ipsum. Cillum in labore cillum labore incididunt mollit culpa velit consectetur sint non cupidatat voluptate ad. Quis non consectetur proident nostrud incididunt anim cillum non anim velit. Elit amet deserunt culpa deserunt ut labore labore aliquip qui qui non ex.\r\n",
+    "Results": [
+      {
+        "Date": "2020-03-11",
+        "Value": 64.267
+      },
+      {
+        "Date": "2020-07-04",
+        "Value": 9.4602
+      },
+      {
+        "Date": "2020-07-18",
+        "Value": 62.3644
+      },
+      {
+        "Date": "2020-08-06",
+        "Value": 60.5686
+      },
+      {
+        "Date": "2020-08-08",
+        "Value": 66.1961
+      },
+      {
+        "Date": "2020-04-27",
+        "Value": 6.157
+      },
+      {
+        "Date": "2020-04-15",
+        "Value": 14.9209
+      },
+      {
+        "Date": "2020-06-23",
+        "Value": 60.1496
+      },
+      {
+        "Date": "2020-03-17",
+        "Value": 46.8912
+      },
+      {
+        "Date": "2020-06-20",
+        "Value": 68.1839
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/68.jpg",
+      "DateAdded": "2020-05-21"
+    }
+  },
+  {
+    "UserName": "Hines",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "1966-05-11",
+    "Created": "2020-04-26",
+    "LastActive": "2020-04-26",
+    "Description": "Magna aliquip ad excepteur Lorem aliquip exercitation do velit reprehenderit id aliquip sit velit. Magna aute aliqua cupidatat aliqua ut nostrud voluptate excepteur enim ad duis. Commodo ex anim mollit deserunt qui exercitation voluptate cupidatat cillum. Nostrud anim consequat anim occaecat eiusmod deserunt eu dolore dolore laborum duis fugiat. Veniam incididunt fugiat sunt incididunt ullamco minim veniam in do dolor laborum excepteur adipisicing incididunt. Occaecat mollit Lorem aute qui incididunt. Cupidatat est ullamco est sint ipsum ut enim.\r\n",
+    "Results": [
+      {
+        "Date": "2020-09-27",
+        "Value": 71.0783
+      },
+      {
+        "Date": "2020-05-17",
+        "Value": 73.4625
+      },
+      {
+        "Date": "2020-05-26",
+        "Value": 97.2472
+      },
+      {
+        "Date": "2020-09-23",
+        "Value": 81.7715
+      },
+      {
+        "Date": "2020-07-17",
+        "Value": 24.5973
+      },
+      {
+        "Date": "2020-03-25",
+        "Value": 80.0437
+      },
+      {
+        "Date": "2020-07-12",
+        "Value": 53.2025
+      },
+      {
+        "Date": "2020-04-14",
+        "Value": 35.248
+      },
+      {
+        "Date": "2020-09-13",
+        "Value": 98.6049
+      },
+      {
+        "Date": "2020-05-17",
+        "Value": 56.0384
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/27.jpg",
+      "DateAdded": "2020-05-03"
+    }
+  },
+  {
+    "UserName": "Mckay",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "1985-08-11",
+    "Created": "2020-02-18",
+    "LastActive": "2020-02-18",
+    "Description": "Magna eiusmod culpa quis enim. Non dolor dolor culpa in ipsum ullamco. Officia eiusmod sunt do ut est proident enim id magna qui anim ipsum fugiat. Cupidatat fugiat quis mollit ad aute esse quis duis.\r\n",
+    "Results": [
+      {
+        "Date": "2020-08-24",
+        "Value": 60.2597
+      },
+      {
+        "Date": "2020-03-30",
+        "Value": 59.5465
+      },
+      {
+        "Date": "2020-03-01",
+        "Value": 41.2435
+      },
+      {
+        "Date": "2020-03-13",
+        "Value": 22.7233
+      },
+      {
+        "Date": "2020-09-03",
+        "Value": 27.5941
+      },
+      {
+        "Date": "2020-04-23",
+        "Value": 17.5191
+      },
+      {
+        "Date": "2020-07-08",
+        "Value": 93.0785
+      },
+      {
+        "Date": "2020-09-15",
+        "Value": 16.9256
+      },
+      {
+        "Date": "2020-07-28",
+        "Value": 73.8328
+      },
+      {
+        "Date": "2020-06-20",
+        "Value": 94.0317
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/30.jpg",
+      "DateAdded": "2020-05-29"
+    }
+  },
+  {
+    "UserName": "Rasmussen",
+    "Password": "password",
+    "Gender": "mężczyzna",
+    "DateOfBirth": "1992-12-03",
+    "Created": "2020-02-18",
+    "LastActive": "2020-02-18",
+    "Description": "Commodo pariatur nulla occaecat laborum amet consectetur do reprehenderit sunt proident eu voluptate minim aute. Minim anim ut sunt commodo nostrud amet incididunt. Ipsum quis exercitation eu deserunt proident officia sint eiusmod cupidatat. Dolor ut minim sint do deserunt cillum duis eu. Sit occaecat anim nulla aute eiusmod qui id do veniam eu ullamco non sit. Consectetur commodo magna nisi non id aute sit Lorem commodo minim fugiat nulla est. Esse nisi adipisicing eiusmod aliqua est et qui ea aliqua.\r\n",
+    "Results": [
+      {
+        "Date": "2020-05-28",
+        "Value": 58.5535
+      },
+      {
+        "Date": "2020-08-22",
+        "Value": 60.0261
+      },
+      {
+        "Date": "2020-05-03",
+        "Value": 99.5145
+      },
+      {
+        "Date": "2020-09-23",
+        "Value": 30.6227
+      },
+      {
+        "Date": "2020-06-10",
+        "Value": 97.2141
+      },
+      {
+        "Date": "2020-06-24",
+        "Value": 20.8703
+      },
+      {
+        "Date": "2020-06-11",
+        "Value": 21.9198
+      },
+      {
+        "Date": "2020-04-10",
+        "Value": 1.5004
+      },
+      {
+        "Date": "2020-08-04",
+        "Value": 41.5724
+      },
+      {
+        "Date": "2020-03-18",
+        "Value": 14.4669
+      }
+    ],
+    "Photo": {
+      "Url": "https://randomuser.me/api/portraits/men/61.jpg",
+      "DateAdded": "2020-03-16"
+    }
+  }
+]
