@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace GnssDemonstrator.API.Models
 {
     public class User
@@ -6,5 +9,19 @@ namespace GnssDemonstrator.API.Models
         public string UserName { get; set; }
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
+
+        // basic info
+        public string Gender { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public DateTime Created { get; set; }
+        public DateTime LastActive { get; set; }
+
+        // result info
+        public List<Result> Results { get; set; }
+        public int BestResult { get; set; }
+
+        // my info
+        public string Description { get; set; }
+        public Photo Photos { get; set; }
     }
 }
