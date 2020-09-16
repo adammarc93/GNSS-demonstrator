@@ -18,7 +18,6 @@ namespace GnssDemonstrator.API.Models
 
         // result info
         public List<Result> Results { get; set; }
-        public int BestResult { get; set; }
 
         // my info
         public string Description { get; set; }

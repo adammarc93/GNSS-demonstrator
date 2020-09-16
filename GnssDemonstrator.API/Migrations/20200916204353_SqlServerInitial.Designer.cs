@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GnssDemonstrator.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20200916201358_SqlServerInitial")]
+    [Migration("20200916204353_SqlServerInitial")]
     partial class SqlServerInitial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -52,7 +52,7 @@ namespace GnssDemonstrator.API.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("UserId")
+                    b.Property<int>("UserId")
                         .HasColumnType("int");
 
                     b.Property<double>("Value")
@@ -71,9 +71,6 @@ namespace GnssDemonstrator.API.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("BestResult")
-                        .HasColumnType("int");
 
                     b.Property<DateTime>("Created")
                         .HasColumnType("datetime2");
@@ -126,9 +123,11 @@ namespace GnssDemonstrator.API.Migrations
 
             modelBuilder.Entity("GnssDemonstrator.API.Models.Result", b =>
                 {
-                    b.HasOne("GnssDemonstrator.API.Models.User", null)
+                    b.HasOne("GnssDemonstrator.API.Models.User", "User")
                         .WithMany("Results")
-                        .HasForeignKey("UserId");
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("GnssDemonstrator.API.Models.User", b =>

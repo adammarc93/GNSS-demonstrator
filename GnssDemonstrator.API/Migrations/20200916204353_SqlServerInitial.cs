@@ -48,7 +48,6 @@ namespace GnssDemonstrator.API.Migrations
                     DateOfBirth = table.Column<DateTime>(nullable: false),
                     Created = table.Column<DateTime>(nullable: false),
                     LastActive = table.Column<DateTime>(nullable: false),
-                    BestResult = table.Column<int>(nullable: false),
                     Description = table.Column<string>(nullable: true),
                     PhotosId = table.Column<int>(nullable: true)
                 },
@@ -71,7 +70,7 @@ namespace GnssDemonstrator.API.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Date = table.Column<DateTime>(nullable: false),
                     Value = table.Column<double>(nullable: false),
-                    UserId = table.Column<int>(nullable: true)
+                    UserId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -81,7 +80,7 @@ namespace GnssDemonstrator.API.Migrations
                         column: x => x.UserId,
                         principalTable: "Users",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
