@@ -30,8 +30,11 @@ namespace GnssDemonstrator.API
             services.AddCors();
             services.AddTransient<Seed>();
             services.AddScoped<IAuthRepository, AuthRepository>();
+            services.AddScoped<IGenericRepository, GenericRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                        .AddJwtBearer(options => {
+                        .AddJwtBearer(options =>
+                        {
                             options.TokenValidationParameters = new TokenValidationParameters
                             {
                                 ValidateIssuerSigningKey = true,
@@ -40,6 +43,9 @@ namespace GnssDemonstrator.API
                                 ValidateAudience = false
                             };
                         });
+            services.AddControllersWithViews()
+                        .AddNewtonsoftJson(options =>
+                            options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
