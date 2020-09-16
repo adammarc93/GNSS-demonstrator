@@ -21,6 +21,6 @@ namespace GnssDemonstrator.API.Models
 
         // my info
         public string Description { get; set; }
-        public Photo Photos { get; set; }
+        public Photo Photo { get; set; }
     }
 }

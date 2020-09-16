@@ -8,18 +8,23 @@ namespace GnssDemonstrator.API.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Photos",
+                name: "Users",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Url = table.Column<string>(nullable: true),
-                    DateAdded = table.Column<DateTime>(nullable: false),
-                    IsMain = table.Column<bool>(nullable: false)
+                    UserName = table.Column<string>(nullable: true),
+                    PasswordHash = table.Column<byte[]>(nullable: true),
+                    PasswordSalt = table.Column<byte[]>(nullable: true),
+                    Gender = table.Column<string>(nullable: true),
+                    DateOfBirth = table.Column<DateTime>(nullable: false),
+                    Created = table.Column<DateTime>(nullable: false),
+                    LastActive = table.Column<DateTime>(nullable: false),
+                    Description = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Photos", x => x.Id);
+                    table.PrimaryKey("PK_Users", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -36,30 +41,24 @@ namespace GnssDemonstrator.API.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Users",
+                name: "Photos",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    UserName = table.Column<string>(nullable: true),
-                    PasswordHash = table.Column<byte[]>(nullable: true),
-                    PasswordSalt = table.Column<byte[]>(nullable: true),
-                    Gender = table.Column<string>(nullable: true),
-                    DateOfBirth = table.Column<DateTime>(nullable: false),
-                    Created = table.Column<DateTime>(nullable: false),
-                    LastActive = table.Column<DateTime>(nullable: false),
-                    Description = table.Column<string>(nullable: true),
-                    PhotosId = table.Column<int>(nullable: true)
+                    Url = table.Column<string>(nullable: true),
+                    DateAdded = table.Column<DateTime>(nullable: false),
+                    UserId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Users", x => x.Id);
+                    table.PrimaryKey("PK_Photos", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Users_Photos_PhotosId",
-                        column: x => x.PhotosId,
-                        principalTable: "Photos",
+                        name: "FK_Photos_Users_UserId",
+                        column: x => x.UserId,
+                        principalTable: "Users",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -84,18 +83,22 @@ namespace GnssDemonstrator.API.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_Photos_UserId",
+                table: "Photos",
+                column: "UserId",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Results_UserId",
                 table: "Results",
                 column: "UserId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Users_PhotosId",
-                table: "Users",
-                column: "PhotosId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Photos");
+
             migrationBuilder.DropTable(
                 name: "Results");
 
@@ -104,9 +107,6 @@ namespace GnssDemonstrator.API.Migrations
 
             migrationBuilder.DropTable(
                 name: "Users");
-
-            migrationBuilder.DropTable(
-                name: "Photos");
         }
     }
 }

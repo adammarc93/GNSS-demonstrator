@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GnssDemonstrator.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20200916204353_SqlServerInitial")]
+    [Migration("20200916221124_SqlServerInitial")]
     partial class SqlServerInitial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -31,13 +31,16 @@ namespace GnssDemonstrator.API.Migrations
                     b.Property<DateTime>("DateAdded")
                         .HasColumnType("datetime2");
 
-                    b.Property<bool>("IsMain")
-                        .HasColumnType("bit");
-
                     b.Property<string>("Url")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
 
                     b.ToTable("Photos");
                 });
@@ -93,15 +96,10 @@ namespace GnssDemonstrator.API.Migrations
                     b.Property<byte[]>("PasswordSalt")
                         .HasColumnType("varbinary(max)");
 
-                    b.Property<int?>("PhotosId")
-                        .HasColumnType("int");
-
                     b.Property<string>("UserName")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("PhotosId");
 
                     b.ToTable("Users");
                 });
@@ -121,6 +119,15 @@ namespace GnssDemonstrator.API.Migrations
                     b.ToTable("Values");
                 });
 
+            modelBuilder.Entity("GnssDemonstrator.API.Models.Photo", b =>
+                {
+                    b.HasOne("GnssDemonstrator.API.Models.User", "User")
+                        .WithOne("Photo")
+                        .HasForeignKey("GnssDemonstrator.API.Models.Photo", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("GnssDemonstrator.API.Models.Result", b =>
                 {
                     b.HasOne("GnssDemonstrator.API.Models.User", "User")
@@ -128,13 +135,6 @@ namespace GnssDemonstrator.API.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("GnssDemonstrator.API.Models.User", b =>
-                {
-                    b.HasOne("GnssDemonstrator.API.Models.Photo", "Photos")
-                        .WithMany()
-                        .HasForeignKey("PhotosId");
                 });
 #pragma warning restore 612, 618
         }
