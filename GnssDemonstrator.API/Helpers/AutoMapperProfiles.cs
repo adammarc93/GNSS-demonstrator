@@ -24,6 +24,7 @@ namespace GnssDemonstrator.API.Helpers
                 .ForMember(dest => dest.AverageResult, opt => {
                     opt.ResolveUsing(src => src.Results.Select(v => v.Value).Average());
                 });
+            
             CreateMap<User, UserForDetailedDto>()
                 .ForMember(dest => dest.Age, opt => {
                     opt.ResolveUsing(src => src.DateOfBirth.CalculateAge());
@@ -34,6 +35,7 @@ namespace GnssDemonstrator.API.Helpers
                 .ForMember(dest => dest.AverageResult, opt => {
                     opt.ResolveUsing(src => src.Results.Select(v => v.Value).Average());
                 });
+            
             CreateMap<Result, ResultForDetailedDto>();
         }
     }

@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 
-using GnssDemonstrator.API.Models;
-
 namespace GnssDemonstrator.API.Dtos
 {
     public class UserForDetailedDto

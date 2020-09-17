@@ -8,7 +8,7 @@ namespace GnssDemonstrator.API.Dtos
         public string UserName { get; set; }
 
         [Required(ErrorMessage = "Hasło jest wymagane")]
-        [StringLength(12, MinimumLength = 6, ErrorMessage = "Hasło musi się składać z 4 do 8 znaków")]
+        [StringLength(12, MinimumLength = 6, ErrorMessage = "Hasło musi się składać z 6 do 12 znaków")]
         public string Password { get; set; }
     }
 }

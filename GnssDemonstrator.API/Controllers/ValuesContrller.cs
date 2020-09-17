@@ -15,7 +15,7 @@ namespace GnssDemonstrator.API.Controllers
     public class ValuesController : ControllerBase
     {
         private DataContext _context;
-        
+
         public ValuesController(DataContext context)
         {
             _context = context;
@@ -33,7 +33,7 @@ namespace GnssDemonstrator.API.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetValue(int id)
         {
-            var value = await _context.Values.FirstOrDefaultAsync(x=>x.Id == id);
+            var value = await _context.Values.FirstOrDefaultAsync(x => x.Id == id);
 
             return Ok(value);
         }
@@ -51,8 +51,8 @@ namespace GnssDemonstrator.API.Controllers
         public async Task<IActionResult> EditValue(int id, [FromBody] Value value)
         {
             var data = await _context.Values.FindAsync(id);
-            
-            if(data == null)
+
+            if (data == null)
             {
                 return NoContent();
             }
@@ -69,11 +69,11 @@ namespace GnssDemonstrator.API.Controllers
         {
             var data = await _context.Values.FindAsync(id);
 
-            if(data == null)
+            if (data == null)
             {
                 return NoContent();
             }
-            
+
             _context.Values.Remove(data);
             await _context.SaveChangesAsync();
 

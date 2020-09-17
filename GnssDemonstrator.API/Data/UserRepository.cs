@@ -1,7 +1,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using GnssDemonstrator.API.Models;
+
 using Microsoft.EntityFrameworkCore;
+
+using GnssDemonstrator.API.Models;
 
 namespace GnssDemonstrator.API.Data
 {
