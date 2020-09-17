@@ -10,6 +10,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 
 using GnssDemonstrator.API.Data;
+using AutoMapper;
 
 namespace GnssDemonstrator.API
 {
@@ -46,6 +47,7 @@ namespace GnssDemonstrator.API
             services.AddControllersWithViews()
                         .AddNewtonsoftJson(options =>
                             options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+            services.AddAutoMapper();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
