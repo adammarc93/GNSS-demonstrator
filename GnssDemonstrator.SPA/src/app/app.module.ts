@@ -9,6 +9,7 @@ import { AuthService } from './_services/auth.service';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { AlertifyService } from './_services/alertify.service';
+import { UserService } from './_services/user.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AlertifyService } from './_services/alertify.service';
   ],
   providers: [
     AuthService,
-    AlertifyService
+    AlertifyService,
+    UserService
   ],
   bootstrap: [AppComponent]
 })
