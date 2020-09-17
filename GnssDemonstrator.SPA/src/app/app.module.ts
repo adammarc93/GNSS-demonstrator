@@ -16,6 +16,7 @@ import { UsersListComponent } from './users/users-list/users-list.component';
 import { GameComponent } from './game/game.component';
 import { KnowledgeTestComponent } from './knowledge-test/knowledge-test.component';
 import { appRoutes } from './routes';
+import { AuthGuard } from './_guards/auth.guard';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -44,7 +45,7 @@ export function tokenGetter() {
     }),
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [AuthService, AlertifyService, UserService],
+  providers: [AuthService, AlertifyService, UserService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
