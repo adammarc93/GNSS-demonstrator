@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { JwtModule } from '@auth0/angular-jwt';
 import { RouterModule } from '@angular/router';
 
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { AuthService } from './_services/auth.service';
@@ -43,7 +45,8 @@ export function tokenGetter() {
         disallowedRoutes: ['localhost:5000/api/auth']
       }
     }),
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    BsDropdownModule.forRoot()
   ],
   providers: [AuthService, AlertifyService, UserService, AuthGuard],
   bootstrap: [AppComponent]
