@@ -11,10 +11,12 @@ namespace GnssDemonstrator.API.Dtos
         public string UserName { get; set; }
         public string Gender { get; set; }
         public int Age { get; set; }
+        public string Description { get; set; }
         public DateTime Created { get; set; }
         public DateTime LastActive { get; set; }
-        public List<Result> Results { get; set; }
-        public string Description { get; set; }
-        public Photo Photo { get; set; }
+        public double BestResult { get; set; }
+        public double AverageResult { get; set; }
+        public List<ResultForDetailedDto> Results { get; set; }
+        public PhotoForDetailedDto Photo { get; set; }
     }
 }
