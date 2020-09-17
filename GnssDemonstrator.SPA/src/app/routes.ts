@@ -7,13 +7,22 @@ import { KnowledgeTestComponent } from './knowledge-test/knowledge-test.componen
 import { AuthGuard } from './_guards/auth.guard';
 
 export const appRoutes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'game', component: GameComponent, canActivate: [AuthGuard] },
-  { path: 'ranking', component: UsersListComponent, canActivate: [AuthGuard] },
+  { path: '', component: HomeComponent },
   {
-    path: 'knowledgeTest',
-    component: KnowledgeTestComponent,
-    canActivate: [AuthGuard]
+    path: '',
+    runGuardsAndResolvers: 'always',
+    canActivate: [AuthGuard],
+    children: [
+      { path: 'game', component: GameComponent },
+      {
+        path: 'ranking',
+        component: UsersListComponent
+      },
+      {
+        path: 'knowledgeTest',
+        component: KnowledgeTestComponent
+      }
+    ]
   },
-  { path: '**', redirectTo: 'home', pathMatch: 'full' }
+  { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
