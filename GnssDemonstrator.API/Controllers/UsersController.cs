@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Linq;
 
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
@@ -29,6 +30,8 @@ namespace GnssDemonstrator.API.Controllers
         {
             var users = await _repository.GetUsers();
             var usersToReturn = _mapper.Map<IEnumerable<UserForListDto>>(users);
+
+            usersToReturn = usersToReturn.OrderByDescending(br => br.BestResult);
 
             return Ok(usersToReturn);
         }
