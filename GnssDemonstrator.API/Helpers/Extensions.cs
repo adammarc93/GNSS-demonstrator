@@ -1,4 +1,5 @@
 using System;
+using Microsoft.AspNetCore.Http;
 
 namespace GnssDemonstrator.API.Helpers
 {
@@ -14,6 +15,13 @@ namespace GnssDemonstrator.API.Helpers
             }
 
             return age;
+        }
+
+        public static void AddApplicationError(this HttpResponse response, string message)
+        {
+            response.Headers.Add("Application-Error", message);
+            response.Headers.Add("Access-Control-Expose-Headers", "Application-Error");
+            response.Headers.Add("Access-Control-Allow-Orgin", "*");
         }
     }
 }

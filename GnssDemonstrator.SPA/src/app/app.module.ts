@@ -19,6 +19,7 @@ import { GameComponent } from './game/game.component';
 import { KnowledgeTestComponent } from './knowledge-test/knowledge-test.component';
 import { appRoutes } from './routes';
 import { AuthGuard } from './_guards/auth.guard';
+import { ErrorInterceptorProvider } from './_services/error.interceptor';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -48,7 +49,13 @@ export function tokenGetter() {
     RouterModule.forRoot(appRoutes),
     BsDropdownModule.forRoot()
   ],
-  providers: [AuthService, AlertifyService, UserService, AuthGuard],
+  providers: [
+    AuthService,
+    AlertifyService,
+    UserService,
+    AuthGuard,
+    ErrorInterceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
