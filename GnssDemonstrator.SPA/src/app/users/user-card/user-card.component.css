@@ -1,0 +1,30 @@
+.card {
+  transform: scale(1, 1);
+  transition-duration: 400ms;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.2, 1.2);
+  transition-duration: 400ms;
+  transition-timing-function: ease-in-out;
+}
+
+.card:hover .user-icon {
+  bottom: 10%;
+  right: -5%;
+  opacity: 1;
+}
+
+.user-icon {
+  position: absolute;
+  bottom: -15%;
+  right: -30%;
+  opacity: 0;
+}
+
+.animate {
+  transition: all 0.4s ease-in-out;
+}
