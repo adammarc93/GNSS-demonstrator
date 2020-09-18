@@ -13,4 +13,5 @@ export interface User {
   averageResult: number;
   results: Result[];
   photo: Photo;
+  photoUrl: string;
 }

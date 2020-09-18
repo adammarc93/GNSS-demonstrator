@@ -1,25 +1,26 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
 import { JwtModule } from '@auth0/angular-jwt';
+import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
-import { AppComponent } from './app.component';
-import { NavComponent } from './nav/nav.component';
-import { AuthService } from './_services/auth.service';
-import { HomeComponent } from './home/home.component';
-import { RegisterComponent } from './register/register.component';
-import { AlertifyService } from './_services/alertify.service';
-import { UserService } from './_services/user.service';
-import { UsersListComponent } from './users/users-list/users-list.component';
-import { GameComponent } from './game/game.component';
-import { KnowledgeTestComponent } from './knowledge-test/knowledge-test.component';
-import { appRoutes } from './routes';
 import { AuthGuard } from './_guards/auth.guard';
+import { AlertifyService } from './_services/alertify.service';
+import { AuthService } from './_services/auth.service';
 import { ErrorInterceptorProvider } from './_services/error.interceptor';
+import { UserService } from './_services/user.service';
+import { AppComponent } from './app.component';
+import { GameComponent } from './game/game.component';
+import { HomeComponent } from './home/home.component';
+import { KnowledgeTestComponent } from './knowledge-test/knowledge-test.component';
+import { NavComponent } from './nav/nav.component';
+import { RegisterComponent } from './register/register.component';
+import { appRoutes } from './routes';
+import { UserCardComponent } from './users/user-card/user-card.component';
+import { UsersListComponent } from './users/users-list/users-list.component';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -33,7 +34,8 @@ export function tokenGetter() {
     RegisterComponent,
     UsersListComponent,
     GameComponent,
-    KnowledgeTestComponent
+    KnowledgeTestComponent,
+    UserCardComponent
   ],
   imports: [
     BrowserModule,
