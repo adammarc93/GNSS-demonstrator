@@ -5,25 +5,26 @@
         <img src="{{ user.photo.url }}" class="card-img-top" alt="{{ user.userName }}" />
       </div>
     </div>
+
     <div class="col-sm-8">
       <div class="card-body">
         <div class="row">
           <div class="col-sm-6">
-            <h5 class="card-title">#9999</h5>
-            <h5 class="card-title">Imię: {{ user.userName | titlecase }}</h5>
-            <p class="card-text">Wiek: {{ user.age }}</p>
-            <p class="card-text">Płeć: {{ user.gender }}</p>
-            <p class="card-text">Użytkownik od: {{ user.created }}</p>
-            <p class="card-text">
+            <h5>#9999</h5>
+            <h5>Imię: <strong>{{ user.userName | titlecase }}</strong></h5>
+            <h5>Wiek: <strong>{{ user.age }}</strong></h5>
+            <h5>Płeć: <strong>{{ user.gender }}</strong></h5>
+            <h5>Użytkownik od: <strong>{{ user.created }}</strong></h5>
+            <h5>
               <small class="text-muted">Ostatnia aktywność: {{ user.lastActive }}</small>
-            </p>
+            </h5>
           </div>
           <div class="col-sm-6">
             <h5 class="card-title">
-              Najlepszy wynik: {{ user.bestResult | number: "1.1-2" }}
+              Najlepszy wynik: <strong>{{ user.bestResult | number: "1.1-2" }}</strong>
             </h5>
             <h5 class="card-title">
-              Średnia z wyników: {{ user.averageResult | number: "1.1-2" }}
+              Średnia z wyników: <strong>{{ user.averageResult | number: "1.1-2" }}</strong>
             </h5>
           </div>
         </div>
@@ -33,6 +34,7 @@
       </div>
     </div>
   </div>
+  
   <table class="table table-striped table-dark mt-3">
     <thead>
       <th scope="col-sm-4">#</th>

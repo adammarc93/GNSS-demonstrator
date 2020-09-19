@@ -9,6 +9,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 import { AuthGuard } from './_guards/auth.guard';
 import { UserDetailResolver } from './_resolver/user-detail.resolver';
+import { UserEditResolver } from './_resolver/user-edit.resolver';
 import { UserListResolver } from './_resolver/user-list.resolver';
 import { AlertifyService } from './_services/alertify.service';
 import { AuthService } from './_services/auth.service';
@@ -23,7 +24,9 @@ import { RegisterComponent } from './register/register.component';
 import { appRoutes } from './routes';
 import { UserCardComponent } from './users/user-card/user-card.component';
 import { UserDetailComponent } from './users/user-detail/user-detail.component';
+import { UserEditComponent } from './users/user-edit/user-edit.component';
 import { UsersListComponent } from './users/users-list/users-list.component';
+import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -39,7 +42,8 @@ export function tokenGetter() {
     GameComponent,
     KnowledgeTestComponent,
     UserCardComponent,
-    UserDetailComponent
+    UserDetailComponent,
+    UserEditComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +66,9 @@ export function tokenGetter() {
     AuthGuard,
     ErrorInterceptorProvider,
     UserDetailResolver,
-    UserListResolver
+    UserListResolver,
+    UserEditResolver,
+    PreventUnsavedChanges
   ],
   bootstrap: [AppComponent]
 })

@@ -7,7 +7,7 @@
         <a class="nav-link" [routerLink]="['/game']">Gra</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/ranking']">Ranking</a>
+        <a class="nav-link" [routerLink]="['/users']">Ranking</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" [routerLink]="['/knowledgeTest']">Test</a>
@@ -29,7 +29,7 @@
         Witaj {{ authService.decodedToken?.unique_name | titlecase }}
       </a>
       <div class="dropdown-menu mt-3" *dropdownMenu>
-        <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Edytuj profil</a>
+        <a class="dropdown-item" [routerLink]="['user/edit']"><i class="fa fa-user"></i> Edytuj profil</a>
         <div class="dropdown-divider"></div>
         <a class="dropdown-item" (click)="logout()"><i class="fa fa-sign-out"></i> Wyloguj</a>
       </div>
