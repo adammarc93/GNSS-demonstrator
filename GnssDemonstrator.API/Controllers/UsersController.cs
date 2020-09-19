@@ -1,6 +1,8 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Linq;
+using System.Security.Claims;
 
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
@@ -43,6 +45,26 @@ namespace GnssDemonstrator.API.Controllers
             var usersToReturn = _mapper.Map<UserForDetailedDto>(user);
 
             return Ok(usersToReturn);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateUser(int id, UserForUpdateDto userForUpdateDto)
+        {
+            if (id != int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value))
+            {
+                return Unauthorized();
+            }
+
+            var userFromRepo = await _repository.GetUser(id);
+
+            _mapper.Map(userForUpdateDto, userFromRepo);
+            
+            if (await _repository.SaveAll())
+            {
+                return NoContent();
+            }
+
+            throw new Exception($"Aktualizacja użytkownika o id {id} nie powiodła się przy zapisie do bazy");
         }
     }
 }

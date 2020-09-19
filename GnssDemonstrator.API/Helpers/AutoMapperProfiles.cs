@@ -37,6 +37,8 @@ namespace GnssDemonstrator.API.Helpers
                 });
             
             CreateMap<Result, ResultForDetailedDto>();
+
+            CreateMap<UserForUpdateDto, User>();
         }
     }
 }
