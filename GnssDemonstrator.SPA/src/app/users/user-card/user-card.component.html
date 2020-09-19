@@ -14,7 +14,8 @@
           Best score: {{ user.bestResult | number: "1.1-2" }}
         </p>
         <small class="card-text text-muted">Average score: {{ user.averageResult | number: "1.1-2" }}</small>
-        <button class=" btn btn-primary user-icon animate"><i class="fa fa-user"></i></button>
+        <button class=" btn btn-primary user-icon animate" [routerLink]="['/ranking/', user.id]"><i
+            class="fa fa-user"></i></button>
       </div>
     </div>
   </div>

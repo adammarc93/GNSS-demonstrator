@@ -8,6 +8,8 @@ import { RouterModule } from '@angular/router';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 import { AuthGuard } from './_guards/auth.guard';
+import { UserDetailResolver } from './_resolver/user-detail.resolver';
+import { UserListResolver } from './_resolver/user-list.resolver';
 import { AlertifyService } from './_services/alertify.service';
 import { AuthService } from './_services/auth.service';
 import { ErrorInterceptorProvider } from './_services/error.interceptor';
@@ -20,6 +22,7 @@ import { NavComponent } from './nav/nav.component';
 import { RegisterComponent } from './register/register.component';
 import { appRoutes } from './routes';
 import { UserCardComponent } from './users/user-card/user-card.component';
+import { UserDetailComponent } from './users/user-detail/user-detail.component';
 import { UsersListComponent } from './users/users-list/users-list.component';
 
 export function tokenGetter() {
@@ -35,7 +38,8 @@ export function tokenGetter() {
     UsersListComponent,
     GameComponent,
     KnowledgeTestComponent,
-    UserCardComponent
+    UserCardComponent,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +60,9 @@ export function tokenGetter() {
     AlertifyService,
     UserService,
     AuthGuard,
-    ErrorInterceptorProvider
+    ErrorInterceptorProvider,
+    UserDetailResolver,
+    UserListResolver
   ],
   bootstrap: [AppComponent]
 })
