@@ -5,7 +5,8 @@
     </div>
     <div class="col-sm-8">
       <div *ngIf="editForm.dirty" class="alert alert-info">
-        <strong>Informacja:</strong> Dokonałeś zmian. Niezapisane zmiany zostaną utracone.
+        <strong>Informacja:</strong> Dokonałeś zmian. Niezapisane zmiany zostaną
+        utracone.
       </div>
     </div>
   </div>
@@ -13,7 +14,17 @@
   <div class="row">
     <div class="col-sm-4">
       <div class="card">
-        <img src="{{ user.photo.url }}" class="card-img-top" alt="{{ user.userName }}" />
+        <img src="{{ user.photo.url }}" class="card-img-top" alt="{{ user.userName }}" id="userImage" />
+        <div class="class-row user-icons animate">
+          <span class="btn btn-success btn-file mr-1">
+            <i class="fa fa-edit"></i>
+            <input type="file" ng2FileSelect [uploader]="uploader" />
+          </span>
+          <span class="btn btn-danger btn-file mr-1">
+            <i class="fa fa-trash"></i>
+            <input type="file" ng2FileSelect [uploader]="uploader" />
+          </span>
+        </div>
       </div>
     </div>
     <div class="col-sm-8">
@@ -23,11 +34,12 @@
             <div class="col-sm-6">
               <div>
                 <h5>Imię:</h5>
-                <textarea class="form-control" name="userName" rows="1" [(ngModel)]="user.userName"></textarea>
+                <textarea [disabled]="true" class="form-control" name="userName" rows="1"
+                  [(ngModel)]="user.userName"></textarea>
               </div>
               <div>
                 <h5>Wiek:</h5>
-                <textarea class="form-control" name="age" rows="1" [(ngModel)]="user.age"></textarea>
+                <textarea [disabled]="true" class="form-control" name="age" rows="1" [(ngModel)]="user.age"></textarea>
               </div>
               <div>
                 <h5>Płeć:</h5>
@@ -37,10 +49,12 @@
             <div class="col-sm-6">
               <h5>Miejsce: <strong>#9999</strong></h5>
               <h5 class="card-title">
-                Najlepszy wynik: <strong>{{ user.bestResult | number: "1.1-2" }}</strong>
+                Najlepszy wynik:
+                <strong>{{ user.bestResult | number: "1.1-2" }}</strong>
               </h5>
               <h5 class="card-title">
-                Średnia z wyników: <strong>{{ user.averageResult | number: "1.1-2" }}</strong>
+                Średnia z wyników:
+                <strong>{{ user.averageResult | number: "1.1-2" }}</strong>
               </h5>
             </div>
           </div>
@@ -55,9 +69,11 @@
 
   <div class="card-footer mt-3">
     <div class="text-center">
-      <button [disabled]="!editForm.dirty" form="editForm" class="btn btn-primary">Zapisz zmiany</button>
+      <button [disabled]="!editForm.dirty" form="editForm" class="btn btn-primary" (click)="uploader.uploadAll()">
+        Zapisz zmiany
+      </button>
     </div>
   </div>
-  
-<app-user-results [results]='user.results' ></app-user-results>
+
+  <app-user-results [results]="user.results"></app-user-results>
 </div>

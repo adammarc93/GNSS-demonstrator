@@ -2,8 +2,45 @@ img {
   margin: 15px;
   width: 90%;
   height: 90%;
+  cursor: pointer;
 }
 
-.card-body {
-  padding: 0 15px;
+.card:hover {
+  opacity: 70%;
+}
+
+.card:hover .user-icons {
+  bottom: 10%;
+  right: 10%;
+  opacity: 1;
+}
+
+.user-icons {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  opacity: 0;
+}
+
+.animate {
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type="file"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  cursor: inherit;
+  display: block;
 }
