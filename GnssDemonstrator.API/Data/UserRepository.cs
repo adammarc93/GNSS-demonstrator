@@ -29,5 +29,12 @@ namespace GnssDemonstrator.API.Data
 
             return users;
         }
+
+        public async Task<Photo> GetPhoto(int id)
+        {
+            var photo = await _context.Photos.FirstOrDefaultAsync(p => p.Id == id);
+
+            return photo;
+        }
     }
 }

@@ -39,6 +39,10 @@ namespace GnssDemonstrator.API.Helpers
             CreateMap<Result, ResultForDetailedDto>();
 
             CreateMap<UserForUpdateDto, User>();
+
+            CreateMap<PhotoForCreationDto, Photo>();
+
+            CreateMap<Photo, PhotoForReturnDto>();
         }
     }
 }
