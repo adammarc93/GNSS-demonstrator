@@ -1,6 +1,8 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-primary">
   <div class="container">
-    <a class="navbar-brand" [routerLink]="['/home']">GNSS Demonstrator</a>
+    <a class="navbar-brand" [routerLink]="['/home']">
+      <img src="../../assets/logo.png" alt="Logo" />
+    </a>
 
     <ul *ngIf="loggedIn()" class="navbar-nav mr-auto">
       <li routerLinkActive="router-link-active">
