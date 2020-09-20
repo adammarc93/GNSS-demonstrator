@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 import { AuthGuard } from './_guards/auth.guard';
+import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { UserDetailResolver } from './_resolver/user-detail.resolver';
 import { UserEditResolver } from './_resolver/user-edit.resolver';
 import { UserListResolver } from './_resolver/user-list.resolver';
@@ -26,7 +27,7 @@ import { UserCardComponent } from './users/user-card/user-card.component';
 import { UserDetailComponent } from './users/user-detail/user-detail.component';
 import { UserEditComponent } from './users/user-edit/user-edit.component';
 import { UsersListComponent } from './users/users-list/users-list.component';
-import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
+import { UserResultsComponent } from './users/user-results/user-results.component';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -43,7 +44,8 @@ export function tokenGetter() {
     KnowledgeTestComponent,
     UserCardComponent,
     UserDetailComponent,
-    UserEditComponent
+    UserEditComponent,
+    UserResultsComponent
   ],
   imports: [
     BrowserModule,
