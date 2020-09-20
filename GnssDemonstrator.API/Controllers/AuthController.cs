@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
+using AutoMapper;
+
 using GnssDemonstrator.API.Data;
 using GnssDemonstrator.API.Dtos;
 using GnssDemonstrator.API.Models;
@@ -20,11 +22,13 @@ namespace GnssDemonstrator.API.Controllers
     {
         private IConfiguration _config;
         private IAuthRepository _repository;
+        private IMapper _mapper;
 
-        public AuthController(IAuthRepository repository, IConfiguration config)
+        public AuthController(IAuthRepository repository, IConfiguration config, IMapper mapper)
         {
             _config = config;
             _repository = repository;
+            _mapper = mapper;
         }
 
         [HttpPost("register")]
@@ -70,8 +74,12 @@ namespace GnssDemonstrator.API.Controllers
 
             var tokenHandler = new JwtSecurityTokenHandler();
             var token = tokenHandler.CreateToken(tokenDescriptor);
+            var user = _mapper.Map<UserForListDto>(userFromRepo);
 
-            return Ok(new { token = tokenHandler.WriteToken(token) });
+            return Ok(new
+            {
+                token = tokenHandler.WriteToken(token), user
+            });
         }
     }
 }

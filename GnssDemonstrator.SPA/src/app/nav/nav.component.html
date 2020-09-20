@@ -27,6 +27,9 @@
     </form>
 
     <div *ngIf="loggedIn()" class="dropdown" dropdown>
+      <span class="mr-2">
+      <img src="{{authService.currentUser.photoUrl}}" class="rounded-circle" />
+      </span>
       <a class="dropdown-toggle text-light" dropdownToggle>
         Witaj {{ authService.decodedToken?.unique_name | titlecase }}
       </a>
