@@ -18,9 +18,11 @@ import { environment } from 'src/environments/environment';
 })
 export class UserEditComponent implements OnInit {
   user: User;
+  photoUrl: string;
   uploader: FileUploader;
   hasBaseDropZoneOver: boolean;
   baseUrl = environment.apiUrl;
+  fileUploaded: boolean;
   @ViewChild('editForm') editForm: NgForm;
   @HostListener('window:beforeunload', ['$event'])
   unloadNotification($event: any) {
@@ -41,20 +43,31 @@ export class UserEditComponent implements OnInit {
       this.user = data.user;
     });
     this.initializUploader();
+    this.authService.currentPhotoUrl.subscribe(
+      photoUrl => (this.photoUrl = photoUrl)
+    );
+    this.authService.currentUser.photoUrl = this.photoUrl;
+    localStorage.setItem('user', JSON.stringify(this.authService.currentUser));
   }
 
   updateUser() {
     this.userService
       .updateUser(this.authService.decodedToken.nameid, this.user)
       .subscribe(
-        () => {
-          this.alertify.success('Profil zaktualizowany');
+        next => {
           this.editForm.reset(this.user);
         },
         error => {
           this.alertify.error(error);
         }
       );
+
+    this.uploader.uploadAll();
+
+    // wait for cloudinary - to fix
+    setTimeout(() => {
+      this.getUpdatedPhoto();
+    }, 5000);
   }
 
   initializUploader() {
@@ -87,5 +100,30 @@ export class UserEditComponent implements OnInit {
         };
       }
     };
+  }
+
+  getUpdatedPhoto() {
+    this.userService.getUser(this.user.id).subscribe(
+      (user: User) => {
+        this.authService.changeUserPhoto(user.photo.url);
+        localStorage.setItem(
+          'user',
+          JSON.stringify(this.authService.currentUser)
+        );
+        this.alertify.success('Profil zaktualizowany');
+      },
+      error => {
+        console.log(error);
+      }
+    );
+  }
+
+  onFileChanged(event) {
+    if (event.target.files[0] != null) {
+      this.fileUploaded = true;
+    }
+    else{
+      this.fileUploaded = false;
+    }
   }
 }

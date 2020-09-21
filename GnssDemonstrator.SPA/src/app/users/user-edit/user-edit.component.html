@@ -14,11 +14,11 @@
   <div class="row">
     <div class="col-sm-4">
       <div class="card">
-        <img src="{{ user.photo.url }}" class="card-img-top" alt="{{ user.userName }}" id="userImage" />
+        <img src="{{ photoUrl }}" class="card-img-top" alt="{{ user.userName }}" id="userImage" />
         <div class="class-row user-icons animate">
           <span class="btn btn-success btn-file mr-1">
             <i class="fa fa-edit"></i>
-            <input type="file" ng2FileSelect [uploader]="uploader" />
+            <input type="file" ng2FileSelect [uploader]="uploader" (change)="onFileChanged($event)" />
           </span>
           <span class="btn btn-danger btn-file mr-1">
             <i class="fa fa-trash"></i>
@@ -69,7 +69,7 @@
 
   <div class="card-footer mt-3">
     <div class="text-center">
-      <button [disabled]="!editForm.dirty" form="editForm" class="btn btn-primary" (click)="uploader.uploadAll()">
+      <button [disabled]="!editForm.dirty && !fileUploaded" form="editForm" class="btn btn-primary" (click)="uploader.uploadAll()">
         Zapisz zmiany
       </button>
     </div>
