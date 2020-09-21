@@ -57,8 +57,11 @@ namespace GnssDemonstrator.API.Controllers
                 return BadRequest("Nie można dodać zdjęcia");
             }
 
-            var deletionParams = new DeletionParams(userFromRepo.Photo.public_id);
-            var deletionResult = _cloudinary.Destroy(deletionParams).Result;
+            if (userFromRepo.Photo != null)
+            {
+                var deletionParams = new DeletionParams(userFromRepo.Photo.public_id);
+                var deletionResult = _cloudinary.Destroy(deletionParams).Result;
+            }
 
             using (var stream = file.OpenReadStream())
             {
@@ -71,7 +74,6 @@ namespace GnssDemonstrator.API.Controllers
                 uploadResult = _cloudinary.Upload(uploadParams);
             }
 
-
             photoForCreationDto.Url = uploadResult.Uri.ToString();
             photoForCreationDto.PublicId = uploadResult.PublicId;
 
@@ -83,6 +85,7 @@ namespace GnssDemonstrator.API.Controllers
             {
                 var photoToReturn = _mapper.Map<PhotoForReturnDto>(photo);
 
+                // to fix
                 // return CreatedAtRoute("GetPhoto", new { id = photo.Id}, photoToReturn);
                 return Ok();
             }
@@ -97,6 +100,48 @@ namespace GnssDemonstrator.API.Controllers
             var photoForReturn = _mapper.Map<PhotoForReturnDto>(photoFromRepo);
 
             return Ok(photoForReturn);
+        }
+
+        // [HttpDelete("{id}")]
+        [HttpDelete]
+
+        public async Task<IActionResult> DeletePhoto(int userId)
+        {
+            if (userId != int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value))
+            {
+                return Unauthorized();
+            }
+
+            var userFromRepo = await _repository.GetUser(userId);
+
+            // if (userFromRepo.Photo == null)
+            // {
+            //     return Unauthorized();
+            // }
+
+            // var photoFromRepo = await _repository.GetPhoto(id);
+
+            if (userFromRepo.Photo.public_id != null)
+            {
+                var deletionParams = new DeletionParams(userFromRepo.Photo.public_id);
+                var deletionResult = _cloudinary.Destroy(deletionParams);
+
+                if (deletionResult.Result == "ok")
+                {
+                    _repository.Delete(userFromRepo.Photo);
+                }
+            }
+            else
+            {
+                _repository.Delete(userFromRepo.Photo);
+            }
+
+            if (await _repository.SaveAll())
+            {
+                return Ok();
+            }
+
+            return BadRequest("Nie udało się uzunąć zdjęcia");
         }
     }
 }

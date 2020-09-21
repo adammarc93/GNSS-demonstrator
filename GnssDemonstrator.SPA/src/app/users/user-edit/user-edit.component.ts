@@ -22,7 +22,6 @@ export class UserEditComponent implements OnInit {
   uploader: FileUploader;
   hasBaseDropZoneOver: boolean;
   baseUrl = environment.apiUrl;
-  fileUploaded: boolean;
   @ViewChild('editForm') editForm: NgForm;
   @HostListener('window:beforeunload', ['$event'])
   unloadNotification($event: any) {
@@ -61,13 +60,6 @@ export class UserEditComponent implements OnInit {
           this.alertify.error(error);
         }
       );
-
-    this.uploader.uploadAll();
-
-    // wait for cloudinary - to fix
-    setTimeout(() => {
-      this.getUpdatedPhoto();
-    }, 5000);
   }
 
   initializUploader() {
@@ -120,9 +112,14 @@ export class UserEditComponent implements OnInit {
 
   onFileChanged(event) {
     if (event.target.files[0] != null) {
+      this.photoUrl = '../../../assets/squere.jpg';
+      this.uploader.uploadAll();
+      // wait for cloudinary - to fix
+      setTimeout(() => {
+        this.getUpdatedPhoto();
+      }, 10000);
       this.fileUploaded = true;
-    }
-    else{
+    } else {
       this.fileUploaded = false;
     }
   }
