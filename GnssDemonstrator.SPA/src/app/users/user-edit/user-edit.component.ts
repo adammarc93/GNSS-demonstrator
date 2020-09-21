@@ -118,9 +118,27 @@ export class UserEditComponent implements OnInit {
       setTimeout(() => {
         this.getUpdatedPhoto();
       }, 10000);
-      this.fileUploaded = true;
-    } else {
-      this.fileUploaded = false;
     }
+  }
+
+  deletePhoto(id: number) {
+    this.alertify.confirm('Usunąć zdjęcie?', () => {
+      this.userService
+        .deletePhoto(this.authService.decodedToken.nameid)
+        .subscribe(
+          () => {
+            this.photoUrl = '../../../assets/squere.jpg';
+            this.authService.changeUserPhoto(this.photoUrl);
+            localStorage.setItem(
+              'user',
+              JSON.stringify(this.authService.currentUser)
+            );
+            this.alertify.success('Zdjęcie zostało usunięte');
+          },
+          error => {
+            this.alertify.error('Nie udało się usunąć zdjęcia');
+          }
+        );
+    });
   }
 }

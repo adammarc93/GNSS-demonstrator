@@ -11,6 +11,7 @@
     </div>
   </div>
 
+  <!-- to fix - add photo component -->
   <div class="row">
     <div class="col-sm-4">
       <div class="card">
@@ -20,10 +21,9 @@
             <i class="fa fa-edit"></i>
             <input type="file" ng2FileSelect [uploader]="uploader" (change)="onFileChanged($event)" />
           </span>
-          <span class="btn btn-danger btn-file mr-1">
+          <button class="btn btn-danger btn-file mr-1" (click)="deletePhoto(user.id)">
             <i class="fa fa-trash"></i>
-            <input type="file" ng2FileSelect [uploader]="uploader" />
-          </span>
+          </button>
         </div>
       </div>
     </div>
