@@ -1,7 +1,7 @@
 import { JwtModule } from '@auth0/angular-jwt';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
@@ -61,7 +61,8 @@ export function tokenGetter() {
     }),
     RouterModule.forRoot(appRoutes),
     BsDropdownModule.forRoot(),
-    FileUploadModule
+    FileUploadModule,
+    ReactiveFormsModule
   ],
   providers: [
     AuthService,
