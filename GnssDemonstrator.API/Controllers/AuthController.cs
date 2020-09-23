@@ -41,7 +41,11 @@ namespace GnssDemonstrator.API.Controllers
                 return BadRequest("Użytkownik o takiej nazwie już istnieje!");
             }
 
+            var userToCreate = _mapper.Map<User>(userForRegisterDto);
             var createdUser = await _repository.Register(new User { UserName = userForRegisterDto.UserName }, userForRegisterDto.Password);
+
+            // var userToReturn = _mapper.Map<UserForDetailedDto>(createdUser);
+            // return CreatedAtRoute("GetUser", new User { controller = "Users", Id = createdUser.Id }, userToReturn);
 
             return StatusCode(201);
         }
@@ -78,7 +82,8 @@ namespace GnssDemonstrator.API.Controllers
 
             return Ok(new
             {
-                token = tokenHandler.WriteToken(token), user
+                token = tokenHandler.WriteToken(token),
+                user
             });
         }
     }

@@ -22,11 +22,11 @@ namespace GnssDemonstrator.API.Helpers
                 })
                 .ForMember(dest => dest.BestResult, opt =>
                 {
-                    opt.ResolveUsing(src => src.Results.Select(v => v.Value).Max());
+                    opt.ResolveUsing(src => src.Results.Any() ? src.Results.Select(v => v.Value).Max() : (double?)null);
                 })
                 .ForMember(dest => dest.AverageResult, opt =>
                 {
-                    opt.ResolveUsing(src => src.Results.Select(v => v.Value).Average());
+                    opt.ResolveUsing(src => src.Results.Any() ? src.Results.Select(v => v.Value).Average() : (double?)null);
                 });
 
             CreateMap<User, UserForDetailedDto>()
@@ -36,11 +36,11 @@ namespace GnssDemonstrator.API.Helpers
                 })
                 .ForMember(dest => dest.BestResult, opt =>
                 {
-                    opt.ResolveUsing(src => src.Results.Select(v => v.Value).Max());
+                    opt.ResolveUsing(src => src.Results.Any() ? src.Results.Select(v => v.Value).Max() : (double?)null);
                 })
                 .ForMember(dest => dest.AverageResult, opt =>
                 {
-                    opt.ResolveUsing(src => src.Results.Select(v => v.Value).Average());
+                    opt.ResolveUsing(src => src.Results.Any() ? src.Results.Select(v => v.Value).Average() : (double?)null);
                 });
 
             CreateMap<Result, ResultForDetailedDto>();
@@ -50,6 +50,8 @@ namespace GnssDemonstrator.API.Helpers
             CreateMap<PhotoForCreationDto, Photo>();
 
             CreateMap<Photo, PhotoForReturnDto>();
+
+            CreateMap<UserForRegisterDto, User>();
         }
     }
 }
