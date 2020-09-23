@@ -38,12 +38,19 @@
                   [(ngModel)]="user.userName"></textarea>
               </div>
               <div>
-                <h5>Wiek:</h5>
-                <textarea [disabled]="true" class="form-control" name="age" rows="1" [(ngModel)]="user.age"></textarea>
+                <h5>Data urodzenia:</h5>
+              <input type="date" class="form-control" name="dateOfBirth" value="2012.01.12" [(ngModel)]="user.dateOfBirth">
               </div>
-              <div>
+              <div class="form-group">
                 <h5>Płeć:</h5>
-                <textarea class="form-control" name="gender" rows="1" [(ngModel)]="user.gender"></textarea>
+                <div>
+                  <label class="radio-inline">
+                    <input type="radio" class="mr-2 " [(ngModel)]="user.gender" value="male" name="gender"> Mężczyzna
+                  </label>
+                  <label class="radio-inline m1-3">
+                    <input type="radio" class="ml-2 " [(ngModel)]="user.gender" value="female" name="gender"> Kobieta
+                  </label>
+                </div>
               </div>
             </div>
             <div class="col-sm-6">

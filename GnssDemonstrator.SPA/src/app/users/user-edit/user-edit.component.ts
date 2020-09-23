@@ -20,7 +20,6 @@ export class UserEditComponent implements OnInit {
   user: User;
   photoUrl: string;
   uploader: FileUploader;
-  hasBaseDropZoneOver: boolean;
   baseUrl = environment.apiUrl;
   @ViewChild('editForm') editForm: NgForm;
   @HostListener('window:beforeunload', ['$event'])
@@ -54,6 +53,7 @@ export class UserEditComponent implements OnInit {
       .updateUser(this.authService.decodedToken.nameid, this.user)
       .subscribe(
         next => {
+          this.alertify.success('Profil zaktualizowany');
           this.editForm.reset(this.user);
         },
         error => {

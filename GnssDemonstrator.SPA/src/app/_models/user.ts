@@ -6,6 +6,7 @@ export interface User {
   userName: string;
   gender: string;
   age: number;
+  dateOfBirth: Date;
   description: string;
   created: Date;
   lastActive: Date;
