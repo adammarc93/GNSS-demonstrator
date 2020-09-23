@@ -8,6 +8,8 @@ import {
 
 import { AuthService } from '../_services/auth.service';
 import { AlertifyService } from '../_services/alertify.service';
+import { User } from '../_models/user';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -17,13 +19,14 @@ import { AlertifyService } from '../_services/alertify.service';
 export class RegisterComponent implements OnInit {
   @Output() cancelRegister = new EventEmitter();
 
-  model: any = {};
+  user: User;
   registerForm: FormGroup;
 
   constructor(
     private authService: AuthService,
     private alertify: AlertifyService,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private router: Router
   ) {}
 
   ngOnInit() {
@@ -31,21 +34,30 @@ export class RegisterComponent implements OnInit {
   }
 
   register() {
-    // this.authService.register(this.model).subscribe(
-    //   () => {
-    //     this.alertify.success('Rejestracja udana');
-    //   },
-    //   error => {
-    //     this.alertify.error(error);
-    //   }
-    // );
+    this.user = Object.assign({}, this.registerForm.value);
+
+    if (this.registerForm.valid) {
+      this.authService.register(this.user).subscribe(
+        () => {
+          this.alertify.success('Rejestracja udana');
+        },
+        error => {
+          this.alertify.error(error);
+        },
+        () => {
+          this.authService
+            .login(this.user)
+            .subscribe(() => this.router.navigate(['/game']));
+        }
+      );
+    }
   }
 
   cancel() {
     this.cancelRegister.emit(false);
   }
 
-  passwordMatchValidator(fg: FormGroup) {
+  passwordMatchValidator(fg: FormControl) {
     return fg.get('password').value === fg.get('confirmPassword').value
       ? null
       : { mismatch: true };
@@ -55,7 +67,7 @@ export class RegisterComponent implements OnInit {
     this.registerForm = this.fb.group(
       {
         username: ['', Validators.required],
-        password: ['', Validators.required, Validators.minLength(6)],
+        password: ['', [Validators.required, Validators.minLength(6)]],
         confirmPassword: ['', Validators.required]
       },
       { validator: this.passwordMatchValidator }
