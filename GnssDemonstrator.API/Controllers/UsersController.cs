@@ -10,9 +10,11 @@ using Microsoft.AspNetCore.Mvc;
 
 using GnssDemonstrator.API.Data;
 using GnssDemonstrator.API.Dtos;
+using GnssDemonstrator.API.Helpers;
 
 namespace GnssDemonstrator.API.Controllers
 {
+    [ServiceFilter(typeof(LogUserActivity))]
     [Authorize]
     [Route("api/[controller]")]
     [ApiController]
@@ -38,7 +40,7 @@ namespace GnssDemonstrator.API.Controllers
             return Ok(usersToReturn);
         }
 
-        [HttpGet("{id}",  Name="GetUser")]
+        [HttpGet("{id}", Name = "GetUser")]
         public async Task<IActionResult> GetUser(int id)
         {
             var user = await _repository.GetUser(id);
@@ -58,7 +60,7 @@ namespace GnssDemonstrator.API.Controllers
             var userFromRepo = await _repository.GetUser(id);
 
             _mapper.Map(userForUpdateDto, userFromRepo);
-            
+
             if (await _repository.SaveAll())
             {
                 return NoContent();
