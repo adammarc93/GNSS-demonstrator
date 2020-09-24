@@ -97,7 +97,9 @@ export class UserEditComponent implements OnInit {
   getUpdatedPhoto() {
     this.userService.getUser(this.user.id).subscribe(
       (user: User) => {
-        this.authService.changeUserPhoto(user.photo.url);
+        this.photoUrl = user.photo.url;
+        this.authService.changeUserPhoto(this.photoUrl);
+        this.authService.currentUser.photoUrl = this.photoUrl;
         localStorage.setItem(
           'user',
           JSON.stringify(this.authService.currentUser)
@@ -112,12 +114,19 @@ export class UserEditComponent implements OnInit {
 
   onFileChanged(event) {
     if (event.target.files[0] != null) {
-      this.photoUrl = '../../../assets/squere.jpg';
+      this.photoUrl = null;
+      this.authService.changeUserPhoto(this.photoUrl);
+      this.authService.currentUser.photoUrl = this.photoUrl;
+      localStorage.setItem(
+        'user',
+        JSON.stringify(this.authService.currentUser)
+      );
       this.uploader.uploadAll();
+      this.alertify.message('Ładowanie zjęcia');
       // wait for cloudinary - to fix
       setTimeout(() => {
         this.getUpdatedPhoto();
-      }, 10000);
+      }, 15000);
     }
   }
 
@@ -127,8 +136,9 @@ export class UserEditComponent implements OnInit {
         .deletePhoto(this.authService.decodedToken.nameid)
         .subscribe(
           () => {
-            this.photoUrl = '../../../assets/squere.jpg';
+            this.photoUrl = null;
             this.authService.changeUserPhoto(this.photoUrl);
+            this.authService.currentUser.photoUrl = this.photoUrl;
             localStorage.setItem(
               'user',
               JSON.stringify(this.authService.currentUser)

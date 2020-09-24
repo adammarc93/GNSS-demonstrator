@@ -15,7 +15,8 @@
   <div class="row">
     <div class="col-sm-4">
       <div class="card">
-        <img src="{{ photoUrl }}" class="card-img-top" alt="{{ user.userName }}" id="userImage" />
+        <img src="{{ photoUrl || '../../../../../assets/no_user.jpg' }}" class="card-img-top" alt="{{ user.userName }}"
+          id="userImage" />
         <div class="class-row user-icons animate">
           <span class="btn btn-success btn-file mr-1">
             <i class="fa fa-edit"></i>
@@ -33,24 +34,33 @@
           <div class="row">
             <div class="col-sm-6">
               <div>
-                <h5>Imię:</h5>
-                <textarea [disabled]="true" class="form-control" name="userName" rows="1"
-                  [(ngModel)]="user.userName"></textarea>
+                <h5>Imię: {{ user.userName | titlecase }}</h5>
+                <!-- <textarea [disabled]="true" class="form-control" name="userName" rows="1"
+                  [(ngModel)]="user.userName"></textarea> -->
               </div>
               <div>
                 <h5>Data urodzenia:</h5>
-              <input type="date" class="form-control" name="dateOfBirth" value="2012.01.12" [(ngModel)]="user.dateOfBirth">
+                <input type="date" class="form-control" name="dateOfBirth" value="21-12-2020"
+                  [(ngModel)]="user.dateOfBirth" />
               </div>
-              <div class="form-group">
+              <div class="form-group mt-2">
                 <h5>Płeć:</h5>
                 <div>
                   <label class="radio-inline">
-                    <input type="radio" class="mr-2 " [(ngModel)]="user.gender" value="male" name="gender"> Mężczyzna
+                    <input type="radio" class="mr-2 " [(ngModel)]="user.gender" value="male" name="gender" />
+                    Mężczyzna
                   </label>
                   <label class="radio-inline m1-3">
-                    <input type="radio" class="ml-2 " [(ngModel)]="user.gender" value="female" name="gender"> Kobieta
+                    <input type="radio" class="ml-2 " [(ngModel)]="user.gender" value="female" name="gender" />
+                    Kobieta
                   </label>
                 </div>
+              </div>
+              <div>
+                <small>Aktywny od: {{ user.created | date: "dd/mm/yyyy" }}</small>
+              </div>
+              <div>
+                <small>Ostatnia aktywność: {{ user.lastActive | timeAgo }}</small>
               </div>
             </div>
             <div class="col-sm-6">

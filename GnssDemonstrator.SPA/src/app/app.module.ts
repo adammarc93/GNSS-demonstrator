@@ -22,6 +22,7 @@ import { GameComponent } from './game/game.component';
 import { HomeComponent } from './home/home.component';
 import { KnowledgeTestComponent } from './knowledge-test/knowledge-test.component';
 import { NavComponent } from './nav/nav.component';
+import { TimeAgoPipe } from './_pipes/time-age-pipe';
 import { RegisterComponent } from './register/register.component';
 import { appRoutes } from './routes';
 import { UserCardComponent } from './users/user-card/user-card.component';
@@ -46,7 +47,8 @@ export function tokenGetter() {
     UserCardComponent,
     UserDetailComponent,
     UserEditComponent,
-    UserResultsComponent
+    UserResultsComponent,
+    TimeAgoPipe
   ],
   imports: [
     BrowserModule,
