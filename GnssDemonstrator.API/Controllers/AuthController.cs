@@ -42,7 +42,7 @@ namespace GnssDemonstrator.API.Controllers
             }
 
             var userToCreate = _mapper.Map<User>(userForRegisterDto);
-            var createdUser = await _repository.Register(new User { UserName = userForRegisterDto.UserName }, userForRegisterDto.Password);
+            var createdUser = await _repository.Register(userToCreate, userForRegisterDto.Password);
 
             // var userToReturn = _mapper.Map<UserForDetailedDto>(createdUser);
             // return CreatedAtRoute("GetUser", new User { controller = "Users", Id = createdUser.Id }, userToReturn);
