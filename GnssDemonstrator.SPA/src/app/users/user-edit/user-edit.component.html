@@ -22,7 +22,7 @@
             <i class="fa fa-edit"></i>
             <input type="file" ng2FileSelect [uploader]="uploader" (change)="onFileChanged($event)" />
           </span>
-          <button class="btn btn-danger btn-file mr-1" (click)="deletePhoto(user.id)">
+          <button class="btn btn-danger btn-file mr-1" [disabled]="!photoUrl" (click)="deletePhoto(user.id)">
             <i class="fa fa-trash"></i>
           </button>
         </div>
@@ -39,9 +39,10 @@
                   [(ngModel)]="user.userName"></textarea> -->
               </div>
               <div>
-                <h5>Data urodzenia:</h5>
-                <input type="date" class="form-control" name="dateOfBirth" value="21-12-2020"
-                  [(ngModel)]="user.dateOfBirth" />
+                <h5>Data urodzenia:
+                  <input type="text" class="form-control" name="dateOfBirth" [(ngModel)]="user.dateOfBirth" bsDatepicker
+                    [bsConfig]="bsConfig" [bsValue]="user.dateOfBirth" />
+                </h5>
               </div>
               <div class="form-group mt-2">
                 <h5>Płeć:</h5>
@@ -57,7 +58,7 @@
                 </div>
               </div>
               <div>
-                <small>Aktywny od: {{ user.created | date: "dd/mm/yyyy" }}</small>
+                <small>Aktywny od: {{ user.created | date: "dd - MM - yyyy" }}</small>
               </div>
               <div>
                 <small>Ostatnia aktywność: {{ user.lastActive | timeAgo }}</small>

@@ -3,9 +3,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 
 import { FileUploadModule } from 'ng2-file-upload';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 import { AuthGuard } from './_guards/auth.guard';
@@ -63,6 +65,8 @@ export function tokenGetter() {
     }),
     RouterModule.forRoot(appRoutes),
     BsDropdownModule.forRoot(),
+    BsDatepickerModule.forRoot(),
+    BrowserAnimationsModule,
     FileUploadModule,
     ReactiveFormsModule
   ],

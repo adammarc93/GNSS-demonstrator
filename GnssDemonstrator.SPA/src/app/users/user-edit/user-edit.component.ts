@@ -3,6 +3,7 @@ import { NgForm } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 
 import { FileUploader } from 'ng2-file-upload';
+import { BsDatepickerConfig } from 'ngx-bootstrap/datepicker';
 
 import { AlertifyService } from 'src/app/_services/alertify.service';
 import { AuthService } from 'src/app/_services/auth.service';
@@ -21,6 +22,7 @@ export class UserEditComponent implements OnInit {
   photoUrl: string;
   uploader: FileUploader;
   baseUrl = environment.apiUrl;
+  bsConfig: Partial<BsDatepickerConfig>;
   @ViewChild('editForm') editForm: NgForm;
   @HostListener('window:beforeunload', ['$event'])
   unloadNotification($event: any) {
@@ -40,6 +42,10 @@ export class UserEditComponent implements OnInit {
     this.route.data.subscribe(data => {
       this.user = data.user;
     });
+    this.bsConfig = Object.assign(
+      {},
+      { dateInputFormat: 'YYYY-MM-DD', containerClass: 'theme-dark-blue' }
+    );
     this.initializUploader();
     this.authService.currentPhotoUrl.subscribe(
       photoUrl => (this.photoUrl = photoUrl)
@@ -49,6 +55,9 @@ export class UserEditComponent implements OnInit {
   }
 
   updateUser() {
+    // solve date probem - to fix
+    this.user.dateOfBirth.setDate(this.user.dateOfBirth.getDate() + 1);
+
     this.userService
       .updateUser(this.authService.decodedToken.nameid, this.user)
       .subscribe(
