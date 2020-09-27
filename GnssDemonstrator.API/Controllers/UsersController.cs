@@ -37,16 +37,28 @@ namespace GnssDemonstrator.API.Controllers
 
             usersToReturn = usersToReturn.OrderByDescending(br => br.BestResult);
 
+            SetUserPlace(usersToReturn);
+
             return Ok(usersToReturn);
         }
 
         [HttpGet("{id}", Name = "GetUser")]
         public async Task<IActionResult> GetUser(int id)
         {
-            var user = await _repository.GetUser(id);
-            var usersToReturn = _mapper.Map<UserForDetailedDto>(user);
+            // to fix
+            var users = await _repository.GetUsers();
+            var usersToReturn = _mapper.Map<IEnumerable<UserForListDto>>(users);
 
-            return Ok(usersToReturn);
+            usersToReturn = usersToReturn.OrderByDescending(br => br.BestResult);
+
+            SetUserPlace(usersToReturn);
+
+            var user = users.FirstOrDefault(u => u.Id == id);
+            var userToReturn = _mapper.Map<UserForDetailedDto>(user);
+
+            userToReturn.Place = usersToReturn.FirstOrDefault(u => u.Id == id).Place;
+
+            return Ok(userToReturn);
         }
 
         [HttpPut("{id}")]
@@ -67,6 +79,14 @@ namespace GnssDemonstrator.API.Controllers
             }
 
             throw new Exception($"Aktualizacja użytkownika o id {id} nie powiodła się przy zapisie do bazy");
+        }
+
+        private void SetUserPlace(IEnumerable<UserForListDto> users)
+        {
+            for (int i = 0; i < users.Count(); i++)
+            {
+                users.ElementAt(i).Place = i + 1;
+            }
         }
     }
 }

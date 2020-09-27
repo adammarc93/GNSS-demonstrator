@@ -10,6 +10,7 @@ export interface User {
   description: string;
   created: Date;
   lastActive: Date;
+  place: number;
   bestResult: number;
   averageResult: number;
   results: Result[];

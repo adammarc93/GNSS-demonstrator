@@ -13,6 +13,7 @@ namespace GnssDemonstrator.API.Dtos
         public DateTime DateOfBirth { get; set; }
         public DateTime Created { get; set; }
         public DateTime LastActive { get; set; }
+        public int Place { get; set; }
         public double? BestResult { get; set; }
         public double? AverageResult { get; set; }
         public List<ResultForDetailedDto> Results { get; set; }

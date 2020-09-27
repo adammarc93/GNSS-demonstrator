@@ -11,12 +11,12 @@
       <div class="card-body">
         <div class="row">
           <div class="col-sm-6">
-            <h5>#9999</h5>
+            <h5># <strong>{{ user.place }}</strong></h5>
             <h5>Imię: <strong>{{ user.userName | titlecase }}</strong></h5>
             <p>Wiek: <strong>{{ user.age }}</strong></p>
             <p>Płeć: <strong>{{ user.gender }}</strong></p>
             <p>
-              <small>Użytkownik od: <strong>{{ user.created | date}}</strong></small>
+              <small>Użytkownik od: <strong>{{ user.created | date: "dd - MM - yyyy"}}</strong></small>
             </p>
             <p>
               <small>Ostatnia aktywność: {{ user.lastActive | timeAgo}}</small>

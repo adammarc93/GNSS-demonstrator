@@ -9,7 +9,7 @@
           <tr *ngFor="let result of results; let i = index">
             <th scope="row">{{i + 1}}</th>
             <th scope="row">{{result.value}}</th>
-            <th scope="row">{{result.date}}</th>
+            <th scope="row">{{result.date | date: "dd - MM - yyyy hh:mm"}}</th>
           </tr>
         </tbody>
       </table>
