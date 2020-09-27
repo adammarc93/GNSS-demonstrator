@@ -18,6 +18,7 @@ namespace GnssDemonstrator.API.Models
 
         // result info
         public List<Result> Results { get; set; }
+        public List<Test> Tests { get; set; }
 
         // my info
         public string Description { get; set; }
