@@ -12,19 +12,20 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 import { AuthGuard } from './_guards/auth.guard';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
+import { TimeAgoPipe } from './_pipes/time-age-pipe';
 import { UserDetailResolver } from './_resolver/user-detail.resolver';
 import { UserEditResolver } from './_resolver/user-edit.resolver';
 import { UserListResolver } from './_resolver/user-list.resolver';
 import { AlertifyService } from './_services/alertify.service';
 import { AuthService } from './_services/auth.service';
 import { ErrorInterceptorProvider } from './_services/error.interceptor';
+import { KnowledgeTestService } from './_services/knowledge-test.service';
 import { UserService } from './_services/user.service';
 import { AppComponent } from './app.component';
 import { GameComponent } from './game/game.component';
 import { HomeComponent } from './home/home.component';
 import { KnowledgeTestComponent } from './knowledge-test/knowledge-test.component';
 import { NavComponent } from './nav/nav.component';
-import { TimeAgoPipe } from './_pipes/time-age-pipe';
 import { RegisterComponent } from './register/register.component';
 import { appRoutes } from './routes';
 import { UserCardComponent } from './users/user-card/user-card.component';
@@ -79,7 +80,8 @@ export function tokenGetter() {
     UserDetailResolver,
     UserListResolver,
     UserEditResolver,
-    PreventUnsavedChanges
+    PreventUnsavedChanges,
+    KnowledgeTestService
   ],
   bootstrap: [AppComponent]
 })

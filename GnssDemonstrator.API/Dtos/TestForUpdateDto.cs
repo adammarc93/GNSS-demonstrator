@@ -13,6 +13,7 @@ namespace GnssDemonstrator.API.Dtos
         public TestForUpdateDto()
         {
             Date = DateTime.Now;
+            Questions = new List<Question>();
         }
     }
 }
