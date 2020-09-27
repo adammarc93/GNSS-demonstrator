@@ -96,7 +96,7 @@ namespace GnssDemonstrator.API.Controllers
         [HttpGet("{id}", Name = "GetPhoto")]
         public async Task<IActionResult> GetPhoto(int id)
         {
-            var photoFromRepo = await _repository.GetPhoto(id);
+            var photoFromRepo = await _repository.GetUserPhoto(id);
             var photoForReturn = _mapper.Map<PhotoForReturnDto>(photoFromRepo);
 
             return Ok(photoForReturn);

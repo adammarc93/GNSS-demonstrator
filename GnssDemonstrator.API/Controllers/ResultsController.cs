@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
@@ -10,7 +11,6 @@ using AutoMapper;
 using GnssDemonstrator.API.Data;
 using GnssDemonstrator.API.Dtos;
 using GnssDemonstrator.API.Models;
-using System.Linq;
 
 namespace GnssDemonstrator.API.Controllers
 {
@@ -62,7 +62,7 @@ namespace GnssDemonstrator.API.Controllers
 
             if (await _repository.SaveAll())
             {
-                return Ok(result);
+                return Ok(resultForUpdateDto);
             }
 
             return BadRequest("Nie można dodać wyniku");

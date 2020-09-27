@@ -54,6 +54,8 @@ namespace GnssDemonstrator.API.Helpers
             CreateMap<UserForRegisterDto, User>();
 
             CreateMap<ResultForUpdateDto, Result>();
+
+            CreateMap<TestForUpdateDto, Test>();
         }
     }
 }
