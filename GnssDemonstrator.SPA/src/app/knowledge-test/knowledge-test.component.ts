@@ -1,11 +1,11 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { environment } from 'src/environments/environment';
+import { NgForm } from '@angular/forms';
+
+import { KnowledgeTest } from '../_models/knowledgeTest';
+import { Question } from '../_models/question';
+import { AlertifyService } from '../_services/alertify.service';
 import { AuthService } from '../_services/auth.service';
 import { KnowledgeTestService } from '../_services/knowledge-test.service';
-import { KnowledgeTest } from '../_models/knowledgeTest';
-import { AlertifyService } from '../_services/alertify.service';
-import { NgForm } from '@angular/forms';
-import { Question } from '../_models/question';
 
 @Component({
   selector: 'app-knowledge-test',
@@ -29,8 +29,6 @@ export class KnowledgeTestComponent implements OnInit {
   }
 
   setKnowledgeTest() {
-    console.log(this.knowledgeTest);
-
     this.knowledgeTestService
       .setKnowledgeTest(
         this.authService.decodedToken.nameid,

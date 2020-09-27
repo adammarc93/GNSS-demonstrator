@@ -1,3 +1,7 @@
-<p>
-  game works!
-</p>
+<form #gameForm="ngForm" id="game" (ngSubmit)="setResult()">
+  <input type="number" style="width: 100px; margin-left: auto; margin-right: auto;" class="form-control" name="dateOfBirth" [(ngModel)]="result.value" />
+  <div class="text-center">
+    <button form="game" class="btn btn-primary">
+      Wyślij wynik
+    </button>
+  </div>

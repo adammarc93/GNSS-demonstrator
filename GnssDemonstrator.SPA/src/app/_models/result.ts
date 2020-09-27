@@ -3,3 +3,7 @@ export interface Result {
   value: number;
   date: Date;
 }
+
+export class Result {
+  result: Result
+}

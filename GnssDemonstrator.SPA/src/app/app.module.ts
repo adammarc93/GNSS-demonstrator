@@ -19,6 +19,7 @@ import { UserListResolver } from './_resolver/user-list.resolver';
 import { AlertifyService } from './_services/alertify.service';
 import { AuthService } from './_services/auth.service';
 import { ErrorInterceptorProvider } from './_services/error.interceptor';
+import { GameService } from './_services/game.service';
 import { KnowledgeTestService } from './_services/knowledge-test.service';
 import { UserService } from './_services/user.service';
 import { AppComponent } from './app.component';
@@ -81,7 +82,8 @@ export function tokenGetter() {
     UserListResolver,
     UserEditResolver,
     PreventUnsavedChanges,
-    KnowledgeTestService
+    KnowledgeTestService,
+    GameService
   ],
   bootstrap: [AppComponent]
 })
