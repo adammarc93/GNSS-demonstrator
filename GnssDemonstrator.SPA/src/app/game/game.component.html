@@ -1,7 +1,607 @@
-<form #gameForm="ngForm" id="game" (ngSubmit)="setResult()">
-  <input type="number" style="width: 100px; margin-left: auto; margin-right: auto;" class="form-control" name="dateOfBirth" [(ngModel)]="result.value" />
-  <div class="text-center">
-    <button form="game" class="btn btn-primary">
-      Wyślij wynik
+<form #gameForm="ngForm" id="game">
+  <div class="text-center mt-3">
+    <button class="btn btn-success btn-lg mr-3" [disabled]="!buttonEnabled" (click)="startGame()">
+      Start
+    </button>
+    <button class="btn btn-danger btn-lg" [disabled]="buttonEnabled" (click)="stopGame()">
+      Stop
     </button>
   </div>
+
+  <table class="center">
+    <tr></tr>
+    <tr>
+      <td>
+        <svg width="560" height="520" style="margin:20px 20px;">
+          <g transform="translate(-20,-60)">
+            <text id="status2" x="490" y="92"></text>
+            <text id="title2" x="290" y="50"></text>
+            <rect #fig2 x="100" y="100" width="400" height="400" stroke="black" stroke-width="1" fill="none" />
+            <line x1="100" y1="300" x2="500" y2="300" stroke="gray" stroke-width="1" />
+            <line x1="100" y1="200" x2="500" y2="200" stroke="gray" stroke-width="1" stroke-dasharray="2,4" />
+            <line x1="100" y1="400" x2="500" y2="400" stroke="gray" stroke-width="1" stroke-dasharray="2,4" />
+            <line x1="300" y1="100" x2="300" y2="500" stroke="gray" stroke-width="1" />
+            <line x1="200" y1="100" x2="200" y2="500" stroke="gray" stroke-width="1" stroke-dasharray="2,4" />
+            <line x1="400" y1="100" x2="400" y2="500" stroke="gray" stroke-width="1" stroke-dasharray="2,4" />
+            <text x="96" y="516"></text>
+            <text id="xmax2" x="480" y="516"></text>
+            <text x="296" y="92">0</text>
+            <text x="504" y="304">90</text>
+            <text id="xhalf2" x="288" y="516">180</text>
+            <text x="76" y="304">270</text>
+
+            <text x="88" y="304"></text>
+            <text x="80" y="504"></text>
+            <text x="88" y="104"></text>
+
+            <circle cx="300" cy="300" r="200" stroke="black" stroke-width="1" fill="none" stroke-dasharray="2,4" />
+            <circle cx="300" cy="300" r="100" stroke="black" stroke-width="1" fill="none" stroke-dasharray="2,4" />
+
+            <line x1="100" y1="100" x2="500" y2="500" stroke="gray" stroke-width="1" stroke-dasharray="2,4" />
+            <line x1="500" y1="100" x2="100" y2="500" stroke="gray" stroke-width="1" stroke-dasharray="2,4" />
+
+            <!-- GPS -->
+            <circle id="s1" r="8" fill="blue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s2" r="8" fill="darkgreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s3" r="8" fill="orange" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s4" r="8" fill="brown" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s5" r="8" fill="cornflowerblue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s6" r="8" fill="limegreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s7" r="8" fill="orangered" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s8" r="8" fill="red" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s9" r="8" fill="blue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s10" r="8" fill="darkgreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s11" r="8" fill="orange" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s12" r="8" fill="brown" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s13" r="8" fill="cornflowerblue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s14" r="8" fill="limegreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s15" r="8" fill="orangered" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s16" r="8" fill="red" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s17" r="8" fill="blue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s18" r="8" fill="darkgreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s19" r="8" fill="orange" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s20" r="8" fill="brown" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s21" r="8" fill="cornflowerblue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s22" r="8" fill="limegreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s23" r="8" fill="orangered" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s24" r="8" fill="red" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s25" r="8" fill="blue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s26" r="8" fill="darkgreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s27" r="8" fill="orange" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s28" r="8" fill="brown" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s29" r="8" fill="cornflowerblue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s30" r="8" fill="limegreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s31" r="8" fill="orangered" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s32" r="8" stroke="white" fill="red" #s (click)="satelliteClick($event)"></circle>
+
+            <!-- GLONASS -->
+            <circle id="s33" r="8" stroke="white" fill="blue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s34" r="8" stroke="white" fill="darkgreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s35" r="8" stroke="white" fill="orange" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s36" r="8" stroke="white" fill="brown" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s37" r="8" stroke="white" fill="cornflowerblue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s38" r="8" stroke="white" fill="limegreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s39" r="8" stroke="white" fill="orangered" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s40" r="8" stroke="white" fill="red" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s41" r="8" stroke="white" fill="blue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s42" r="8" stroke="white" fill="darkgreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s43" r="8" stroke="white" fill="orange" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s44" r="8" stroke="white" fill="brown" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s45" r="8" stroke="white" fill="cornflowerblue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s46" r="8" stroke="white" fill="limegreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s47" r="8" stroke="white" fill="orangered" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s48" r="8" stroke="white" fill="red" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s49" r="8" stroke="white" fill="blue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s50" r="8" stroke="white" fill="darkgreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s51" r="8" stroke="white" fill="orange" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s52" r="8" stroke="white" fill="brown" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s53" r="8" stroke="white" fill="cornflowerblue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s54" r="8" stroke="white" fill="limegreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s55" r="8" stroke="white" fill="orangered" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s56" r="8" stroke="white" fill="red" #s (click)="satelliteClick($event)"></circle>
+
+            <!-- GALILEO -->
+            <circle id="s57" r="8" stroke="white" fill="blue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s58" r="8" stroke="white" fill="darkgreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s59" r="8" stroke="white" fill="orange" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s60" r="8" stroke="white" fill="brown" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s61" r="8" stroke="white" fill="cornflowerblue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s62" r="8" stroke="white" fill="limegreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s63" r="8" stroke="white" fill="orangered" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s64" r="8" stroke="white" fill="red" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s65" r="8" stroke="white" fill="blue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s66" r="8" stroke="white" fill="darkgreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s67" r="8" stroke="white" fill="orange" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s68" r="8" stroke="white" fill="brown" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s69" r="8" stroke="white" fill="cornflowerblue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s70" r="8" stroke="white" fill="limegreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s71" r="8" stroke="white" fill="orangered" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s72" r="8" stroke="white" fill="red" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s73" r="8" stroke="white" fill="blue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s74" r="8" stroke="white" fill="darkgreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s75" r="8" stroke="white" fill="orange" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s76" r="8" stroke="white" fill="brown" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s77" r="8" stroke="white" fill="cornflowerblue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s78" r="8" stroke="white" fill="limegreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s79" r="8" stroke="white" fill="orangered" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s80" r="8" stroke="white" fill="red" #s (click)="satelliteClick($event)"></circle>
+
+            <!-- BEIDOU -->
+            <circle id="s81" r="8" stroke="white" fill="blue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s82" r="8" stroke="white" fill="darkgreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s83" r="8" stroke="white" fill="orange" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s84" r="8" stroke="white" fill="brown" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s85" r="8" stroke="white" fill="cornflowerblue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s86" r="8" stroke="white" fill="limegreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s87" r="8" stroke="white" fill="orangered" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s88" r="8" stroke="white" fill="red" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s89" r="8" stroke="white" fill="blue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s90" r="8" stroke="white" fill="darkgreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s91" r="8" stroke="white" fill="orange" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s92" r="8" stroke="white" fill="brown" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s93" r="8" stroke="white" fill="cornflowerblue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s94" r="8" stroke="white" fill="limegreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s95" r="8" stroke="white" fill="orangered" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s96" r="8" stroke="white" fill="red" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s97" r="8" stroke="white" fill="blue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s98" r="8" stroke="white" fill="darkgreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s99" r="8" stroke="white" fill="orange" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s100" r="8" stroke="white" fill="brown" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s101" r="8" stroke="white" fill="cornflowerblue" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s102" r="8" stroke="white" fill="limegreen" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s103" r="8" stroke="white" fill="orangered" #s (click)="satelliteClick($event)"></circle>
+            <circle id="s104" r="8" stroke="white" fill="red" #s (click)="satelliteClick($event)"></circle>
+
+            <polyline id="v0" stroke="red" stroke-width="1" fill="none" #v />
+
+            <!-- GPS -->
+            <polyline id="a1" stroke="blue" stroke-width="2" fill="none" #a />
+            <polyline id="a2" stroke="darkgreen" stroke-width="2" fill="none" #a />
+            <polyline id="a3" stroke="orange" stroke-width="2" fill="none" #a />
+            <polyline id="a4" stroke="brown" stroke-width="2" fill="none" #a />
+            <polyline id="a5" stroke="cornflowerblue" stroke-width="2" fill="none" #a />
+            <polyline id="a6" stroke="limegreen" stroke-width="2" fill="none" #a />
+            <polyline id="a7" stroke="orangered" stroke-width="2" fill="none" #a />
+            <polyline id="a8" stroke="red" stroke-width="2" fill="none" #a />
+            <polyline id="a9" stroke="blue" stroke-width="2" fill="none" #a />
+            <polyline id="a10" stroke="darkgreen" stroke-width="2" fill="none" #a />
+            <polyline id="a11" stroke="orange" stroke-width="2" fill="none" #a />
+            <polyline id="a12" stroke="brown" stroke-width="2" fill="none" #a />
+            <polyline id="a13" stroke="cornflowerblue" stroke-width="2" fill="none" #a />
+            <polyline id="a14" stroke="limegreen" stroke-width="2" fill="none" #a />
+            <polyline id="a15" stroke="orangered" stroke-width="2" fill="none" #a />
+            <polyline id="a16" stroke="red" stroke-width="2" fill="none" #a />
+            <polyline id="a17" stroke="blue" stroke-width="2" fill="none" #a />
+            <polyline id="a18" stroke="darkgreen" stroke-width="2" fill="none" #a />
+            <polyline id="a19" stroke="orange" stroke-width="2" fill="none" #a />
+            <polyline id="a20" stroke="brown" stroke-width="2" fill="none" #a />
+            <polyline id="a21" stroke="cornflowerblue" stroke-width="2" fill="none" #a />
+            <polyline id="a22" stroke="limegreen" stroke-width="2" fill="none" #a />
+            <polyline id="a23" stroke="orangered" stroke-width="2" fill="none" #a />
+            <polyline id="a24" stroke="red" stroke-width="2" fill="none" #a />
+            <polyline id="a25" stroke="blue" stroke-width="2" fill="none" #a />
+            <polyline id="a26" stroke="darkgreen" stroke-width="2" fill="none" #a />
+            <polyline id="a27" stroke="orange" stroke-width="2" fill="none" #a />
+            <polyline id="a28" stroke="brown" stroke-width="2" fill="none" #a />
+            <polyline id="a29" stroke="cornflowerblue" stroke-width="2" fill="none" #a />
+            <polyline id="a30" stroke="limegreen" stroke-width="2" fill="none" #a />
+            <polyline id="a31" stroke="orangered" stroke-width="2" fill="none" #a />
+            <polyline id="a32" stroke="red" stroke-width="2" fill="none" #a />
+
+            <!-- GLONASS -->
+            <polyline id="a33" stroke="blue" stroke-width="2" fill="none" #a />
+            <polyline id="a34" stroke="darkgreen" stroke-width="2" fill="none" #a />
+            <polyline id="a35" stroke="orange" stroke-width="2" fill="none" #a />
+            <polyline id="a36" stroke="brown" stroke-width="2" fill="none" #a />
+            <polyline id="a37" stroke="cornflowerblue" stroke-width="2" fill="none" #a />
+            <polyline id="a38" stroke="limegreen" stroke-width="2" fill="none" #a />
+            <polyline id="a39" stroke="orangered" stroke-width="2" fill="none" #a />
+            <polyline id="a40" stroke="red" stroke-width="2" fill="none" #a />
+            <polyline id="a41" stroke="blue" stroke-width="2" fill="none" #a />
+            <polyline id="a42" stroke="darkgreen" stroke-width="2" fill="none" #a />
+            <polyline id="a43" stroke="orange" stroke-width="2" fill="none" #a />
+            <polyline id="a44" stroke="brown" stroke-width="2" fill="none" #a />
+            <polyline id="a45" stroke="cornflowerblue" stroke-width="2" fill="none" #a />
+            <polyline id="a46" stroke="limegreen" stroke-width="2" fill="none" #a />
+            <polyline id="a47" stroke="orangered" stroke-width="2" fill="none" #a />
+            <polyline id="a48" stroke="red" stroke-width="2" fill="none" #a />
+            <polyline id="a49" stroke="blue" stroke-width="2" fill="none" #a />
+            <polyline id="a50" stroke="darkgreen" stroke-width="2" fill="none" #a />
+            <polyline id="a51" stroke="orange" stroke-width="2" fill="none" #a />
+            <polyline id="a52" stroke="brown" stroke-width="2" fill="none" #a />
+            <polyline id="a53" stroke="cornflowerblue" stroke-width="2" fill="none" #a />
+            <polyline id="a54" stroke="limegreen" stroke-width="2" fill="none" #a />
+            <polyline id="a55" stroke="orangered" stroke-width="2" fill="none" #a />
+            <polyline id="a56" stroke="red" stroke-width="2" fill="none" #a />
+
+            <!-- GALILEO -->
+            <polyline id="a57" stroke="blue" stroke-width="2" fill="none" #a />
+            <polyline id="a58" stroke="darkgreen" stroke-width="2" fill="none" #a />
+            <polyline id="a59" stroke="orange" stroke-width="2" fill="none" #a />
+            <polyline id="a60" stroke="brown" stroke-width="2" fill="none" #a />
+            <polyline id="a61" stroke="cornflowerblue" stroke-width="2" fill="none" #a />
+            <polyline id="a62" stroke="limegreen" stroke-width="2" fill="none" #a />
+            <polyline id="a63" stroke="orangered" stroke-width="2" fill="none" #a />
+            <polyline id="a64" stroke="red" stroke-width="2" fill="none" #a />
+            <polyline id="a65" stroke="blue" stroke-width="2" fill="none" #a />
+            <polyline id="a66" stroke="darkgreen" stroke-width="2" fill="none" #a />
+            <polyline id="a67" stroke="orange" stroke-width="2" fill="none" #a />
+            <polyline id="a68" stroke="brown" stroke-width="2" fill="none" #a />
+            <polyline id="a69" stroke="cornflowerblue" stroke-width="2" fill="none" #a />
+            <polyline id="a70" stroke="limegreen" stroke-width="2" fill="none" #a />
+            <polyline id="a71" stroke="orangered" stroke-width="2" fill="none" #a />
+            <polyline id="a72" stroke="red" stroke-width="2" fill="none" #a />
+            <polyline id="a73" stroke="blue" stroke-width="2" fill="none" #a />
+            <polyline id="a74" stroke="darkgreen" stroke-width="2" fill="none" #a />
+            <polyline id="a75" stroke="orange" stroke-width="2" fill="none" #a />
+            <polyline id="a76" stroke="brown" stroke-width="2" fill="none" #a />
+            <polyline id="a77" stroke="cornflowerblue" stroke-width="2" fill="none" #a />
+            <polyline id="a78" stroke="limegreen" stroke-width="2" fill="none" #a />
+            <polyline id="a79" stroke="orangered" stroke-width="2" fill="none" #a />
+            <polyline id="a80" stroke="red" stroke-width="2" fill="none" #a />
+
+            <!-- BEIDOU -->
+            <polyline id="a81" stroke="blue" stroke-width="2" fill="none" #a />
+            <polyline id="a82" stroke="darkgreen" stroke-width="2" fill="none" #a />
+            <polyline id="a83" stroke="orange" stroke-width="2" fill="none" #a />
+            <polyline id="a84" stroke="brown" stroke-width="2" fill="none" #a />
+            <polyline id="a85" stroke="cornflowerblue" stroke-width="2" fill="none" #a />
+            <polyline id="a86" stroke="limegreen" stroke-width="2" fill="none" #a />
+            <polyline id="a87" stroke="orangered" stroke-width="2" fill="none" #a />
+            <polyline id="a88" stroke="red" stroke-width="2" fill="none" #a />
+            <polyline id="a89" stroke="blue" stroke-width="2" fill="none" #a />
+            <polyline id="a90" stroke="darkgreen" stroke-width="2" fill="none" #a />
+            <polyline id="a91" stroke="orange" stroke-width="2" fill="none" #a />
+            <polyline id="a92" stroke="brown" stroke-width="2" fill="none" #a />
+            <polyline id="a93" stroke="cornflowerblue" stroke-width="2" fill="none" #a />
+            <polyline id="a94" stroke="limegreen" stroke-width="2" fill="none" #a />
+            <polyline id="a95" stroke="orangered" stroke-width="2" fill="none" #a />
+            <polyline id="a96" stroke="red" stroke-width="2" fill="none" #a />
+            <polyline id="a97" stroke="blue" stroke-width="2" fill="none" #a />
+            <polyline id="a98" stroke="darkgreen" stroke-width="2" fill="none" #a />
+            <polyline id="a99" stroke="orange" stroke-width="2" fill="none" #a />
+            <polyline id="a100" stroke="brown" stroke-width="2" fill="none" #a />
+            <polyline id="a101" stroke="cornflowerblue" stroke-width="2" fill="none" #a />
+            <polyline id="a102" stroke="limegreen" stroke-width="2" fill="none" #a />
+            <polyline id="a103" stroke="orangered" stroke-width="2" fill="none" #a />
+            <polyline id="a104" stroke="red" stroke-width="2" fill="none" #a />
+          </g>
+        </svg>
+
+        <div class="hidden">
+          <input type="checkbox" #gp checked (change)="g()" />
+          <label for="gp"> GPS </label>
+          <input type="checkbox" #gl checked (change)="g()" />
+          <label for="gl"> GLONASS </label>
+          <input type="checkbox" #ga checked (change)="g()" />
+          <label for="ga"> GALILEO </label>
+          <input type="checkbox" #bd checked (change)="g()" />
+          <label for="bd"> BEIDOU </label>
+        </div>
+      </td>
+      <td width="440">
+        <div style="width:100%">
+          <p><span #trackInfo class="hidden">Track point number: 14</span></p>
+          <input type="range" min="1" max="20" value="0" class="slider" #trackPoint class="hidden" />
+        </div>
+        <br />
+        <div style="width:100%;height:512px;">
+          <p id="pppp" #dst></p>
+          <p id="ppp" #dst></p>
+          <p id="pp" #dst></p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <div class="display-4">
+        <p>
+          Wynik: {{ result.value | number: '1.2-2' }} sec
+        </p>
+      </div>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <div class="mt-3">
+          <input class="slider" type="range" min="0" max="86400" value="0" disabled #timeRange />
+          <p>
+            <input type="text" #date bsDatepicker [bsConfig]="bsConfig" (change)="dateinpOnchange()" class="hidden" />
+            <span #timeInfo class="hidden"></span>
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr class="hidden">
+      <td colspan="2">
+        <svg width="1000" height="500">
+          <g transform="translate(0,-60)">
+            <!-- <image xlink:href="Blue_Marble_800px.jpg" x="100" y="100" height="400px" width="800px" /> -->
+            <text id="status1" x="890" y="92"></text>
+            <text id="title1" x="490" y="92"></text>
+            <rect #fig1 x="100" y="100" width="800" height="400" stroke="black" stroke-width="1" fill="none" />
+            <line x1="100" y1="300" x2="900" y2="300" stroke="gray" stroke-width="1" />
+            <line x1="100" y1="200" x2="900" y2="200" stroke="gray" stroke-width="1" stroke-dasharray="2,4" />
+            <line x1="100" y1="400" x2="900" y2="400" stroke="gray" stroke-width="1" stroke-dasharray="2,4" />
+            <line x1="900" y1="100" x2="900" y2="500" stroke="gray" stroke-width="1" />
+            <line x1="500" y1="100" x2="500" y2="500" stroke="gray" stroke-width="1" stroke-dasharray="2,4" />
+            <line x1="900" y1="100" x2="900" y2="500" stroke="gray" stroke-width="1" stroke-dasharray="2,4" />
+
+            <line x1="300" y1="100" x2="300" y2="500" stroke="gray" stroke-width="1" stroke-dasharray="2,4" />
+            <line x1="700" y1="100" x2="700" y2="500" stroke="gray" stroke-width="1" stroke-dasharray="2,4" />
+
+            <text x="88" y="516">-180</text>
+            <text id="xmax" x="888" y="516">180</text>
+            <text id="xhalf" x="496" y="516">0</text>
+            <text id="x_1_4" x="288" y="516">-90</text>
+            <text id="x_3_4" x="692" y="516">90</text>
+
+            <text x="88" y="304">0</text>
+            <text x="70" y="504">-90</text>
+            <text x="78" y="104">90</text>
+
+            <!-- GPS -->
+            <polyline id="ch1" stroke="blue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch2" stroke="darkgreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch3" stroke="orange" stroke-width="2" fill="none" #ch />
+            <polyline id="ch4" stroke="brown" stroke-width="2" fill="none" #ch />
+            <polyline id="ch5" stroke="cornflowerblue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch6" stroke="limegreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch7" stroke="orangered" stroke-width="2" fill="none" #ch />
+            <polyline id="ch8" stroke="red" stroke-width="2" fill="none" #ch />
+            <polyline id="ch9" stroke="blue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch10" stroke="darkgreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch11" stroke="orange" stroke-width="2" fill="none" #ch />
+            <polyline id="ch12" stroke="brown" stroke-width="2" fill="none" #ch />
+            <polyline id="ch13" stroke="cornflowerblue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch14" stroke="limegreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch15" stroke="orangered" stroke-width="2" fill="none" #ch />
+            <polyline id="ch16" stroke="red" stroke-width="2" fill="none" #ch />
+            <polyline id="ch17" stroke="blue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch18" stroke="darkgreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch19" stroke="orange" stroke-width="2" fill="none" #ch />
+            <polyline id="ch20" stroke="brown" stroke-width="2" fill="none" #ch />
+            <polyline id="ch21" stroke="cornflowerblue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch22" stroke="limegreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch23" stroke="orangered" stroke-width="2" fill="none" #ch />
+            <polyline id="ch24" stroke="red" stroke-width="2" fill="none" #ch />
+            <polyline id="ch25" stroke="blue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch26" stroke="darkgreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch27" stroke="orange" stroke-width="2" fill="none" #ch />
+            <polyline id="ch28" stroke="brown" stroke-width="2" fill="none" #ch />
+            <polyline id="ch29" stroke="cornflowerblue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch30" stroke="limegreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch31" stroke="orangered" stroke-width="2" fill="none" #ch />
+            <polyline id="ch32" stroke="red" stroke-width="2" fill="none" #ch />
+
+            <!-- GLONASS -->
+            <polyline id="ch33" stroke="blue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch34" stroke="darkgreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch35" stroke="orange" stroke-width="2" fill="none" #ch />
+            <polyline id="ch36" stroke="brown" stroke-width="2" fill="none" #ch />
+            <polyline id="ch37" stroke="cornflowerblue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch38" stroke="limegreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch39" stroke="orangered" stroke-width="2" fill="none" #ch />
+            <polyline id="ch40" stroke="red" stroke-width="2" fill="none" #ch />
+            <polyline id="ch41" stroke="blue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch42" stroke="darkgreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch43" stroke="orange" stroke-width="2" fill="none" #ch />
+            <polyline id="ch44" stroke="brown" stroke-width="2" fill="none" #ch />
+            <polyline id="ch45" stroke="cornflowerblue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch46" stroke="limegreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch47" stroke="orangered" stroke-width="2" fill="none" #ch />
+            <polyline id="ch48" stroke="red" stroke-width="2" fill="none" #ch />
+            <polyline id="ch49" stroke="blue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch50" stroke="darkgreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch51" stroke="orange" stroke-width="2" fill="none" #ch />
+            <polyline id="ch52" stroke="brown" stroke-width="2" fill="none" #ch />
+            <polyline id="ch53" stroke="cornflowerblue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch54" stroke="limegreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch55" stroke="orangered" stroke-width="2" fill="none" #ch />
+            <polyline id="ch56" stroke="red" stroke-width="2" fill="none" #ch />
+
+            <!-- GALILEO -->
+            <polyline id="ch57" stroke="blue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch58" stroke="darkgreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch59" stroke="orange" stroke-width="2" fill="none" #ch />
+            <polyline id="ch60" stroke="brown" stroke-width="2" fill="none" #ch />
+            <polyline id="ch61" stroke="cornflowerblue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch62" stroke="limegreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch63" stroke="orangered" stroke-width="2" fill="none" #ch />
+            <polyline id="ch64" stroke="red" stroke-width="2" fill="none" #ch />
+            <polyline id="ch65" stroke="blue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch66" stroke="darkgreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch67" stroke="orange" stroke-width="2" fill="none" #ch />
+            <polyline id="ch68" stroke="brown" stroke-width="2" fill="none" #ch />
+            <polyline id="ch69" stroke="cornflowerblue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch70" stroke="limegreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch71" stroke="orangered" stroke-width="2" fill="none" #ch />
+            <polyline id="ch72" stroke="red" stroke-width="2" fill="none" #ch />
+            <polyline id="ch73" stroke="blue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch74" stroke="darkgreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch75" stroke="orange" stroke-width="2" fill="none" #ch />
+            <polyline id="ch76" stroke="brown" stroke-width="2" fill="none" #ch />
+            <polyline id="ch77" stroke="cornflowerblue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch78" stroke="limegreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch79" stroke="orangered" stroke-width="2" fill="none" #ch />
+            <polyline id="ch80" stroke="red" stroke-width="2" fill="none" #ch />
+
+            <!-- BEIDOU -->
+            <polyline id="ch81" stroke="blue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch82" stroke="darkgreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch83" stroke="orange" stroke-width="2" fill="none" #ch />
+            <polyline id="ch84" stroke="brown" stroke-width="2" fill="none" #ch />
+            <polyline id="ch85" stroke="cornflowerblue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch86" stroke="limegreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch87" stroke="orangered" stroke-width="2" fill="none" #ch />
+            <polyline id="ch88" stroke="red" stroke-width="2" fill="none" #ch />
+            <polyline id="ch89" stroke="blue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch90" stroke="darkgreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch91" stroke="orange" stroke-width="2" fill="none" #ch />
+            <polyline id="ch92" stroke="brown" stroke-width="2" fill="none" #ch />
+            <polyline id="ch93" stroke="cornflowerblue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch94" stroke="limegreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch95" stroke="orangered" stroke-width="2" fill="none" #ch />
+            <polyline id="ch96" stroke="red" stroke-width="2" fill="none" #ch />
+            <polyline id="ch97" stroke="blue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch98" stroke="darkgreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch99" stroke="orange" stroke-width="2" fill="none" #ch />
+            <polyline id="ch100" stroke="brown" stroke-width="2" fill="none" #ch />
+            <polyline id="ch101" stroke="cornflowerblue" stroke-width="2" fill="none" #ch />
+            <polyline id="ch102" stroke="limegreen" stroke-width="2" fill="none" #ch />
+            <polyline id="ch103" stroke="orangered" stroke-width="2" fill="none" #ch />
+            <polyline id="ch104" stroke="red" stroke-width="2" fill="none" #ch />
+
+            <!-- GPS -->
+            <circle id="p1" r="6" fill="blue" #p></circle>
+            <circle id="p2" r="6" fill="darkgreen" #p></circle>
+            <circle id="p3" r="6" fill="orange" #p></circle>
+            <circle id="p4" r="6" fill="brown" #p></circle>
+            <circle id="p5" r="6" fill="cornflowerblue" #p></circle>
+            <circle id="p6" r="6" fill="limegreen" #p></circle>
+            <circle id="p7" r="6" fill="orangered" #p></circle>
+            <circle id="p8" r="6" fill="red" #p></circle>
+            <circle id="p9" r="6" fill="blue" #p></circle>
+            <circle id="p10" r="6" fill="darkgreen" #p></circle>
+            <circle id="p11" r="6" fill="orange" #p></circle>
+            <circle id="p12" r="6" fill="brown" #p></circle>
+            <circle id="p13" r="6" fill="cornflowerblue" #p></circle>
+            <circle id="p14" r="6" fill="limegreen" #p></circle>
+            <circle id="p15" r="6" fill="orangered" #p></circle>
+            <circle id="p16" r="6" fill="red" #p></circle>
+            <circle id="p17" r="6" fill="blue" #p></circle>
+            <circle id="p18" r="6" fill="darkgreen" #p></circle>
+            <circle id="p19" r="6" fill="orange" #p></circle>
+            <circle id="p20" r="6" fill="brown" #p></circle>
+            <circle id="p21" r="6" fill="cornflowerblue" #p></circle>
+            <circle id="p22" r="6" fill="limegreen" #p></circle>
+            <circle id="p23" r="6" fill="orangered" #p></circle>
+            <circle id="p24" r="6" fill="red" #p></circle>
+            <circle id="p25" r="6" fill="blue" #p></circle>
+            <circle id="p26" r="6" fill="darkgreen" #p></circle>
+            <circle id="p27" r="6" fill="orange" #p></circle>
+            <circle id="p28" r="6" fill="brown" #p></circle>
+            <circle id="p29" r="6" fill="cornflowerblue" #p></circle>
+            <circle id="p30" r="6" fill="limegreen" #p></circle>
+            <circle id="p31" r="6" fill="orangered" #p></circle>
+            <circle id="p32" r="6" fill="red" #p></circle>
+
+            <!-- GLONASS -->
+            <circle id="p33" r="6" fill="blue" #p></circle>
+            <circle id="p34" r="6" fill="darkgreen" #p></circle>
+            <circle id="p35" r="6" fill="orange" #p></circle>
+            <circle id="p36" r="6" fill="brown" #p></circle>
+            <circle id="p37" r="6" fill="cornflowerblue" #p></circle>
+            <circle id="p38" r="6" fill="limegreen" #p></circle>
+            <circle id="p39" r="6" fill="orangered" #p></circle>
+            <circle id="p40" r="6" fill="red" #p></circle>
+            <circle id="p41" r="6" fill="blue" #p></circle>
+            <circle id="p42" r="6" fill="darkgreen" #p></circle>
+            <circle id="p43" r="6" fill="orange" #p></circle>
+            <circle id="p44" r="6" fill="brown" #p></circle>
+            <circle id="p45" r="6" fill="cornflowerblue" #p></circle>
+            <circle id="p46" r="6" fill="limegreen" #p></circle>
+            <circle id="p47" r="6" fill="orangered" #p></circle>
+            <circle id="p48" r="6" fill="red" #p></circle>
+            <circle id="p49" r="6" fill="blue" #p></circle>
+            <circle id="p50" r="6" fill="darkgreen" #p></circle>
+            <circle id="p51" r="6" fill="orange" #p></circle>
+            <circle id="p52" r="6" fill="brown" #p></circle>
+            <circle id="p53" r="6" fill="cornflowerblue" #p></circle>
+            <circle id="p54" r="6" fill="limegreen" #p></circle>
+            <circle id="p55" r="6" fill="orangered" #p></circle>
+            <circle id="p56" r="6" fill="red" #p></circle>
+
+            <!-- GALILEO -->
+            <circle id="p57" r="6" fill="blue" #p></circle>
+            <circle id="p58" r="6" fill="darkgreen" #p></circle>
+            <circle id="p59" r="6" fill="orange" #p></circle>
+            <circle id="p60" r="6" fill="brown" #p></circle>
+            <circle id="p61" r="6" fill="cornflowerblue" #p></circle>
+            <circle id="p62" r="6" fill="limegreen" #p></circle>
+            <circle id="p63" r="6" fill="orangered" #p></circle>
+            <circle id="p64" r="6" fill="red" #p></circle>
+            <circle id="p65" r="6" fill="blue" #p></circle>
+            <circle id="p66" r="6" fill="darkgreen" #p></circle>
+            <circle id="p67" r="6" fill="orange" #p></circle>
+            <circle id="p68" r="6" fill="brown" #p></circle>
+            <circle id="p69" r="6" fill="cornflowerblue" #p></circle>
+            <circle id="p70" r="6" fill="limegreen" #p></circle>
+            <circle id="p71" r="6" fill="orangered" #p></circle>
+            <circle id="p72" r="6" fill="red" #p></circle>
+            <circle id="p73" r="6" fill="blue" #p></circle>
+            <circle id="p74" r="6" fill="darkgreen" #p></circle>
+            <circle id="p75" r="6" fill="orange" #p></circle>
+            <circle id="p76" r="6" fill="brown" #p></circle>
+            <circle id="p77" r="6" fill="cornflowerblue" #p></circle>
+            <circle id="p78" r="6" fill="limegreen" #p></circle>
+            <circle id="p79" r="6" fill="orangered" #p></circle>
+            <circle id="p80" r="6" fill="red" #p></circle>
+
+            <!-- BEIDOU -->
+            <circle id="p81" r="6" fill="blue" #p></circle>
+            <circle id="p82" r="6" fill="darkgreen" #p></circle>
+            <circle id="p83" r="6" fill="orange" #p></circle>
+            <circle id="p84" r="6" fill="brown" #p></circle>
+            <circle id="p85" r="6" fill="cornflowerblue" #p></circle>
+            <circle id="p86" r="6" fill="limegreen" #p></circle>
+            <circle id="p87" r="6" fill="orangered" #p></circle>
+            <circle id="p88" r="6" fill="red" #p></circle>
+            <circle id="p89" r="6" fill="blue" #p></circle>
+            <circle id="p90" r="6" fill="darkgreen" #p></circle>
+            <circle id="p91" r="6" fill="orange" #p></circle>
+            <circle id="p92" r="6" fill="brown" #p></circle>
+            <circle id="p93" r="6" fill="cornflowerblue" #p></circle>
+            <circle id="p94" r="6" fill="limegreen" #p></circle>
+            <circle id="p95" r="6" fill="orangered" #p></circle>
+            <circle id="p96" r="6" fill="red" #p></circle>
+            <circle id="p97" r="6" fill="blue" #p></circle>
+            <circle id="p98" r="6" fill="darkgreen" #p></circle>
+            <circle id="p99" r="6" fill="orange" #p></circle>
+            <circle id="p100" r="6" fill="brown" #p></circle>
+            <circle id="p101" r="6" fill="cornflowerblue" #p></circle>
+            <circle id="p102" r="6" fill="limegreen" #p></circle>
+            <circle id="p103" r="6" fill="orangered" #p></circle>
+            <circle id="p104" r="6" fill="red" #p></circle>
+          </g>
+        </svg>
+      </td>
+    </tr>
+    <tr></tr>
+    <tr class="hidden">
+      <td colspan="2">
+        <svg width="960" height="900" style="margin:20px 20px;">
+          <g id="g3" transform="translate(0,-60)">
+            <text id="status3" x="882" y="92"></text>
+            <text id="title3" x="490" y="60"></text>
+            <!-- <image xlink:href="N-34-50-C-c-2-1-a_440.png" x="100" y="100" height="800px" width="800px" /> -->
+            <rect #fig3 x="100" y="100" width="800" height="800" stroke="black" stroke-width="1" fill="none" />
+            <!-- horizontal grid -->
+            <line x1="100" y1="300" x2="900" y2="300" stroke="gray" stroke-width="1" />
+            <line x1="100" y1="500" x2="900" y2="500" stroke="gray" stroke-width="1" stroke-dasharray="2,4" />
+            <line x1="100" y1="700" x2="900" y2="700" stroke="gray" stroke-width="1" stroke-dasharray="2,4" />
+            <!-- vertical grid -->
+            <line x1="300" y1="100" x2="300" y2="900" stroke="gray" stroke-width="1" />
+            <line x1="500" y1="100" x2="500" y2="900" stroke="gray" stroke-width="1" stroke-dasharray="2,4" />
+            <line x1="700" y1="100" x2="700" y2="900" stroke="gray" stroke-width="1" stroke-dasharray="2,4" />
+            <!-- x-axis -->
+            <text #xmin3 x="76" y="916">471603.5</text>
+            <text #xhalf3 x="476" y="916"></text>
+            <text #xmax3 x="876" y="916"></text>
+
+            <!-- y-axis -->
+            <text #ymin3 x="40" y="900">725831.0</text>
+            <text #yhalf3 x="40" y="504"></text>
+            <text #ymax3 x="40" y="104"></text>
+
+            <text x="88" y="304"></text>
+            <text x="80" y="504"></text>
+            <text x="88" y="104"></text>
+
+            <circle id="s0" cx="-99" cy="-99" r="8" fill="red"></circle>
+
+            <polyline #t0 stroke="red" stroke-width="1" fill="none" />
+          </g>
+        </svg>
+      </td>
+    </tr>
+  </table>
+</form>
