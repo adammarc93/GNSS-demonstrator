@@ -1,13 +1,21 @@
-<div class="container margin mt-5">
-  <div *ngIf="!registerMode" style="text-align: center">
-    <h1>Velit fugiat occaecat adipisicing eu adipisicing veniam.</h1>
-    <p class="lead">Consequat excepteur voluptate irure enim tempor dolore pariatur ex nulla dolore qui laboris et
-      consectetur. Sint laborum nisi cupidatat officia aliqua eiusmod magna fugiat velit fugiat irure proident.
-      Cupidatat nulla cillum mollit eiusmod ad pariatur velit pariatur Lorem pariatur.
+<div *ngIf="!loggedIn()" class="container margin mt-5">
+  <div *ngIf="!registerMode && !infoMode" style="text-align: center">
+    <h1>Gra zręcznościowo - edukacyjna GNSS Demonstrator</h1>
+    <p class="lead">
+      Dynamiczna gra zręcznościowa, oparta na prawdziwych danych satelitarnych,
+      w której to gracz dzięki refleksowi stara się w jak nawiększym stopni
+      zminimalizować błąd wyznaczanie pozycji.
+    </p>
+    <p class="lead">
+      Zarejestruj się i zagraj!
     </p>
     <div class="text-center">
-      <button class="btn btn-primary btn-lg mr-3" (click)="registerToggle()">Rejestracja</button>
-      <button class="btn btn-secondary btn-lg">więcej ...</button>
+      <button class="btn btn-primary btn-lg mr-3" (click)="registerToggle()">
+        Rejestracja
+      </button>
+      <button class="btn btn-secondary btn-lg" (click)="infoToggle()">
+        więcej ...
+      </button>
     </div>
   </div>
 
@@ -16,6 +24,51 @@
       <div class="col-4">
         <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
       </div>
+    </div>
+  </div>
+
+  <div *ngIf="infoMode" class="container">
+    <div class="row justify-content-center">
+      <h3>Autor: inż. <strong>Adam Marciniak</strong></h3>
+      <h3>
+        Promotor: dr hab. inż. <strong>Marek Moszyński</strong>, prof. nadzw. PG
+      </h3>
+    </div>
+    <div class="text-center">
+      <button class="btn btn-secondary btn-lg" (click)="backToggle()">
+        Powrót
+      </button>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="loggedIn()" class="container margin mt-5">
+  <div>
+    <h1 style="text-align: center">Cel gry</h1>
+    <p class="lead">
+      Celem gry jest uzyskanie przez gracza jak najdłużego czasu kiedy parametr HDOP wynosi poniżej wartości "10". Aby
+      to
+      osiągnąć może wykorzystać minimalna liczbę satelitów jaka jest potrzeban do wyznaczenia pozycji ( tj. czterech).
+    </p>
+
+    <h1 style="text-align: center">Przebieg gry</h1>
+    <div class="lead">
+      <p>
+        Po uruchomieniu gry, gracz jest umieszczony na jednej z 20 pozycji, co skutkuje innym obszarem gry.
+      </p>
+      <p>
+        Gdy na planszy pojawiają się satelity z czterech systemów satelitarnych (GPS, GLONASS, BEIDOU, GALILEO),
+        gracz ma za zadanie wybranie czterech.
+      </p>
+      <p>
+        Po prawiej stronie ekrany zostają wyświetlane kolejno:
+        <br>- parametry pozycji gracza
+        <br>- wartość współczynnika HDOP
+        <br>- parametry wybranych sateitów
+      </p>
+      <p>
+        W trakcie gry jest podliczany łączny czas, kiedy to gracz osiągał wartość współczynnika HDOP poniżej 10.
+      </p>
     </div>
   </div>
 </div>
