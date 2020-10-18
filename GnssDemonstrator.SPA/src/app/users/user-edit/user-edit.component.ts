@@ -55,9 +55,9 @@ export class UserEditComponent implements OnInit {
   }
 
   updateUser() {
-    // solve date probem - to fix
-    this.user.dateOfBirth.setDate(this.user.dateOfBirth.getDate() + 1);
+    const date = new Date(this.user.dateOfBirth.getFullYear(), this.user.dateOfBirth.getMonth(), this.user.dateOfBirth.getDay());
 
+    this.user.dateOfBirth = date;
     this.userService
       .updateUser(this.authService.decodedToken.nameid, this.user)
       .subscribe(
