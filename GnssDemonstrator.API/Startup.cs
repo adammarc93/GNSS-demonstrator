@@ -86,6 +86,8 @@ namespace GnssDemonstrator.API
             seeder.SeedUsers();
             app.UseCors(options => options.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
             app.UseAuthentication();
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
             app.UseHttpsRedirection();
             app.UseRouting();
             app.UseAuthorization();
@@ -93,6 +95,7 @@ namespace GnssDemonstrator.API
             {
                 endpoints.MapControllers();
             });
+            app.UseSpa(_ => { });
         }
     }
 }

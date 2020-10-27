@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
-  <ItemGroup>&#xD;
+  <ItemGroup>&#xD;&#xD;
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.8"/>
@@ -15,5 +15,6 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0"/>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="4.0.1"/>
     <PackageReference Include="CloudinaryDotNet" Version="1.3.1"/>
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.0.0"/>
   </ItemGroup>
 </Project>

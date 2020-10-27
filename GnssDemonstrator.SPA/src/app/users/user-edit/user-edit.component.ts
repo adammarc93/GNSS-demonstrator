@@ -55,7 +55,8 @@ export class UserEditComponent implements OnInit {
   }
 
   updateUser() {
-    const date = new Date(this.user.dateOfBirth.getFullYear(), this.user.dateOfBirth.getMonth(), this.user.dateOfBirth.getDay());
+    const userDate = new Date(this.user.dateOfBirth);
+    const date = new Date(userDate.getFullYear(), userDate.getMonth(), userDate.getDay());
 
     this.user.dateOfBirth = date;
     this.userService
