@@ -15,7 +15,7 @@ import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-user-edit',
   templateUrl: './user-edit.component.html',
-  styleUrls: ['./user-edit.component.css']
+  styleUrls: ['./user-edit.component.css'],
 })
 export class UserEditComponent implements OnInit {
   user: User;
@@ -39,7 +39,7 @@ export class UserEditComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.route.data.subscribe(data => {
+    this.route.data.subscribe((data) => {
       this.user = data.user;
     });
     this.bsConfig = Object.assign(
@@ -48,25 +48,24 @@ export class UserEditComponent implements OnInit {
     );
     this.initializUploader();
     this.authService.currentPhotoUrl.subscribe(
-      photoUrl => (this.photoUrl = photoUrl)
+      (photoUrl) => (this.photoUrl = photoUrl)
     );
     this.authService.currentUser.photoUrl = this.photoUrl;
     localStorage.setItem('user', JSON.stringify(this.authService.currentUser));
   }
 
   updateUser() {
-    const userDate = new Date(this.user.dateOfBirth);
-    const date = new Date(userDate.getFullYear(), userDate.getMonth(), userDate.getDay());
+    const pickDate = new Date(this.user.dateOfBirth);
+    this.user.dateOfBirth = pickDate;
 
-    this.user.dateOfBirth = date;
     this.userService
       .updateUser(this.authService.decodedToken.nameid, this.user)
       .subscribe(
-        next => {
+        (next) => {
           this.alertify.success('Profil zaktualizowany');
           this.editForm.reset(this.user);
         },
-        error => {
+        (error) => {
           this.alertify.error(error);
         }
       );
@@ -85,10 +84,10 @@ export class UserEditComponent implements OnInit {
       removeAfterUpload: true,
       autoUpload: false,
       maxFileSize: 10 * 1024 * 1024,
-      queueLimit: 1
+      queueLimit: 1,
     });
 
-    this.uploader.onAfterAddingFile = file => {
+    this.uploader.onAfterAddingFile = (file) => {
       file.withCredentials = false;
     };
 
@@ -98,7 +97,7 @@ export class UserEditComponent implements OnInit {
         const photo = {
           id: res.id,
           url: res.url,
-          dateAdded: res.dateAdded
+          dateAdded: res.dateAdded,
         };
       }
     };
@@ -107,6 +106,10 @@ export class UserEditComponent implements OnInit {
   getUpdatedPhoto() {
     this.userService.getUser(this.user.id).subscribe(
       (user: User) => {
+        if (user.photo.url == null) {
+          this.alertify.error('Nie udało się załadować zdjęcia');
+        }
+
         this.photoUrl = user.photo.url;
         this.authService.changeUserPhoto(this.photoUrl);
         this.authService.currentUser.photoUrl = this.photoUrl;
@@ -116,7 +119,7 @@ export class UserEditComponent implements OnInit {
         );
         this.alertify.success('Profil zaktualizowany');
       },
-      error => {
+      (error) => {
         console.log(error);
       }
     );
@@ -155,7 +158,7 @@ export class UserEditComponent implements OnInit {
             );
             this.alertify.success('Zdjęcie zostało usunięte');
           },
-          error => {
+          (error) => {
             this.alertify.error('Nie udało się usunąć zdjęcia');
           }
         );
