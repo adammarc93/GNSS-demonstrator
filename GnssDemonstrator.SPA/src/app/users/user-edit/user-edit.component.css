@@ -6,7 +6,7 @@ img {
 }
 
 .card:hover {
-  opacity: 70%;
+  /* opacity: 70%; */
 }
 
 .card:hover .user-icons {
