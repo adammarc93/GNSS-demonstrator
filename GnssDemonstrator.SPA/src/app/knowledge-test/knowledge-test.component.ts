@@ -46,16 +46,16 @@ export class KnowledgeTestComponent implements OnInit {
 
   loadQuestions() {
     const questionsData: string[] = [
-      'https://res.cloudinary.com/duvmum0tm/image/upload/v1603722722/test00_x6mchl.png',
-      'https://res.cloudinary.com/duvmum0tm/image/upload/v1603722722/test01_jc7tge.png',
-      'https://res.cloudinary.com/duvmum0tm/image/upload/v1603722722/test02_ilvtpx.png',
-      'https://res.cloudinary.com/duvmum0tm/image/upload/v1603722722/test03_ktlfsv.png',
-      'https://res.cloudinary.com/duvmum0tm/image/upload/v1603722722/test04_migetr.png',
-      'https://res.cloudinary.com/duvmum0tm/image/upload/v1603722722/test05_vei2kn.png',
-      'https://res.cloudinary.com/duvmum0tm/image/upload/v1603722723/test06_itzz4a.png',
-      'https://res.cloudinary.com/duvmum0tm/image/upload/v1603722723/test07_bf77ph.png',
-      'https://res.cloudinary.com/duvmum0tm/image/upload/v1603722723/test08_qixt0q.png',
-      'https://res.cloudinary.com/duvmum0tm/image/upload/v1603722723/test09_bhewx4.png'
+      'https://res.cloudinary.com/duvmum0tm/image/upload/c_scale,w_400/v1604622765/test_00_hcfprs.png',
+      'https://res.cloudinary.com/duvmum0tm/image/upload/c_scale,w_400/v1604622765/test_01_xak457.png',
+      'https://res.cloudinary.com/duvmum0tm/image/upload/c_scale,w_400/v1604622765/test_02_rptd27.png',
+      'https://res.cloudinary.com/duvmum0tm/image/upload/c_scale,w_400/v1604622764/test_03_upqmu2.png',
+      'https://res.cloudinary.com/duvmum0tm/image/upload/c_scale,w_400/v1604622764/test_04_mjmphr.png',
+      'https://res.cloudinary.com/duvmum0tm/image/upload/c_scale,w_400/v1604622764/test_05_lwxgc4.png',
+      'https://res.cloudinary.com/duvmum0tm/image/upload/c_scale,w_400/v1604622764/test_06_jjghnc.png',
+      'https://res.cloudinary.com/duvmum0tm/image/upload/c_scale,w_400/v1604622764/test_07_eduegz.png',
+      'https://res.cloudinary.com/duvmum0tm/image/upload/c_scale,w_400/v1604622764/test_08_dhjrwx.png',
+      'https://res.cloudinary.com/duvmum0tm/image/upload/c_scale,w_400/v1604622764/test_09_ra8ymj.png'
     ];
 
     for (let i = 0; i < questionsData.length; i++) {
